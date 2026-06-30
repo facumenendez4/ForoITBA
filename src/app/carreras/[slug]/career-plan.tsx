@@ -42,10 +42,10 @@ export function CareerPlan({
     <div className="space-y-8">
       {sortedTerms.map((term) => (
         <section key={term}>
-          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+          <h2 className="text-base font-semibold text-muted-foreground uppercase tracking-wide mb-4">
             {parseTerm(term)}
           </h2>
-          <div className="grid gap-2 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-2">
             {termGroups[term].map((cs) => (
               <SubjectCard key={cs.id} cs={cs} />
             ))}
@@ -70,10 +70,10 @@ export function CareerPlan({
           {showElectives &&
             Object.entries(electiveGroups).map(([group, subjects]) => (
               <section key={group}>
-                <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                <h2 className="text-base font-semibold text-muted-foreground uppercase tracking-wide mb-4">
                   {group}
                 </h2>
-                <div className="grid gap-2 sm:grid-cols-2">
+                <div className="grid gap-3 sm:grid-cols-2">
                   {subjects.map((cs) => (
                     <SubjectCard key={cs.id} cs={cs} />
                   ))}
@@ -90,21 +90,28 @@ function SubjectCard({ cs }: { cs: SubjectEntry }) {
   return (
     <Link
       href={`/materias/${cs.subjects.slug}`}
-      className="group flex items-center gap-3 rounded-lg border p-3 transition-colors hover:bg-accent/50"
+      className="group flex items-center gap-4 rounded-lg border p-5 transition-colors hover:bg-accent/50"
     >
-      <BookOpen className="h-4 w-4 shrink-0 text-muted-foreground" />
+      <BookOpen className="h-6 w-6 shrink-0 text-muted-foreground" />
       <div className="flex-1 min-w-0">
-        <p className="text-sm font-medium truncate">{cs.subjects.name}</p>
-        <p className="text-xs text-muted-foreground">
-          {cs.subjects.code} &middot; {cs.credits} créditos
+        <div className="flex items-baseline gap-2.5">
+          <span className="font-mono text-lg font-bold text-primary shrink-0">
+            {cs.subjects.code}
+          </span>
+          <span className="text-lg font-semibold truncate">
+            {cs.subjects.name}
+          </span>
+        </div>
+        <p className="text-sm text-muted-foreground mt-1">
+          {cs.credits} créditos
         </p>
       </div>
       {cs.is_elective && (
-        <Badge variant="secondary" className="text-xs shrink-0">
+        <Badge variant="secondary" className="text-sm shrink-0">
           Electiva
         </Badge>
       )}
-      <ChevronRight className="h-4 w-4 text-muted-foreground shrink-0 transition-transform group-hover:translate-x-0.5" />
+      <ChevronRight className="h-5 w-5 text-muted-foreground shrink-0 transition-transform group-hover:translate-x-0.5" />
     </Link>
   )
 }
