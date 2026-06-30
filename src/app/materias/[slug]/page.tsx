@@ -2,14 +2,14 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { Header } from "@/components/header"
-import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
 import {
   getSubjectBySlug,
   getSubjectCareers,
-  getSubjectMetrics,
   getSubjectReviews,
   getSubjectContributions,
+  getViewer,
+  getMyReview,
+  getMyVotes,
 } from "@/lib/queries"
 import { SubjectContent } from "./subject-content"
 import { ArrowLeft } from "lucide-react"
@@ -31,12 +31,16 @@ export default async function SubjectPage({ params }: Props) {
   const subject = await getSubjectBySlug(slug)
   if (!subject) notFound()
 
-  const [careerLinks, metrics, reviews, contributions] = await Promise.all([
-    getSubjectCareers(subject.code),
-    getSubjectMetrics(subject.code),
-    getSubjectReviews(subject.code),
-    getSubjectContributions(subject.code),
-  ])
+  const [careerLinks, reviews, contributions, viewer, myReview] =
+    await Promise.all([
+      getSubjectCareers(subject.code),
+      getSubjectReviews(subject.code),
+      getSubjectContributions(subject.code),
+      getViewer(),
+      getMyReview(subject.code),
+    ])
+
+  const myVotes = await getMyVotes(contributions.map((c) => c.id))
 
   const careers = careerLinks.map((cl: any) => ({
     id: cl.careers.id as string,
@@ -69,22 +73,17 @@ export default async function SubjectPage({ params }: Props) {
           </h1>
         </div>
 
-        <div className="flex flex-wrap gap-2 mb-6">
-          {careers.map((c) => (
-            <Link key={c.id} href={`/carreras/${c.slug}`}>
-              <Badge variant="secondary" className="hover:bg-accent transition-colors">
-                {c.name}
-              </Badge>
-            </Link>
-          ))}
-        </div>
+        <div className="mb-6" />
 
         <SubjectContent
           subject={subject}
+          slug={slug}
           careers={careers}
-          metrics={metrics}
           reviews={reviews}
           contributions={contributions}
+          viewer={viewer}
+          myReview={myReview}
+          myVotes={myVotes}
         />
       </div>
     </main>

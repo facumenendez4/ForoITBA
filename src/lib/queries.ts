@@ -1,5 +1,19 @@
 import { createClient } from "@/lib/supabase/server"
 
+export type Viewer = {
+  userId: string
+  careerId: string | null
+}
+
+export type MyReview = {
+  career_id: string
+  difficulty: number
+  workload: number
+  usefulness: number
+  comment: string | null
+  term_taken: string | null
+}
+
 export type Career = {
   id: string
   name: string
@@ -153,6 +167,65 @@ export async function getSubjectReviewCount(subjectCode: string): Promise<number
     .select("*", { count: "exact", head: true })
     .eq("subject_code", subjectCode)
   return count ?? 0
+}
+
+/** El usuario logueado + su carrera de perfil, o null si es anónimo. */
+export async function getViewer(): Promise<Viewer | null> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return null
+
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("career_id")
+    .eq("id", user.id)
+    .single()
+
+  return { userId: user.id, careerId: profile?.career_id ?? null }
+}
+
+/** La reseña propia del usuario para una materia (para prefill/editar), o null. */
+export async function getMyReview(subjectCode: string): Promise<MyReview | null> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return null
+
+  const { data } = await supabase
+    .from("reviews")
+    .select("career_id, difficulty, workload, usefulness, comment, term_taken")
+    .eq("user_id", user.id)
+    .eq("subject_code", subjectCode)
+    .maybeSingle()
+
+  return (data as MyReview | null) ?? null
+}
+
+/** Los votos del usuario sobre un conjunto de aportes: { contribution_id: 1 | -1 }. */
+export async function getMyVotes(
+  contributionIds: string[]
+): Promise<Record<string, 1 | -1>> {
+  if (contributionIds.length === 0) return {}
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return {}
+
+  const { data } = await supabase
+    .from("votes")
+    .select("contribution_id, value")
+    .eq("user_id", user.id)
+    .in("contribution_id", contributionIds)
+
+  const map: Record<string, 1 | -1> = {}
+  for (const row of data ?? []) {
+    map[row.contribution_id as string] = row.value as 1 | -1
+  }
+  return map
 }
 
 export async function getCareerSubjectCounts(careerId: string): Promise<{ total: number; electives: number }> {

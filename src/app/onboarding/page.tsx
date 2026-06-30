@@ -84,10 +84,10 @@ export default function OnboardingPage() {
       return
     }
 
+    // upsert: un signup fresco puede no tener todavía fila en profiles.
     const { error: updateError } = await supabase
       .from("profiles")
-      .update({ career_id: selectedCareer })
-      .eq("id", user.id)
+      .upsert({ id: user.id, career_id: selectedCareer })
 
     if (updateError) {
       setError(updateError.message)
@@ -127,7 +127,9 @@ export default function OnboardingPage() {
                   onValueChange={(v) => setSelectedCareer(v ?? "")}
                 >
                   <SelectTrigger id="career">
-                    <SelectValue placeholder="Seleccioná tu carrera" />
+                    <SelectValue placeholder="Seleccioná tu carrera">
+                      {careers.find((c) => c.id === selectedCareer)?.name}
+                    </SelectValue>
                   </SelectTrigger>
                   <SelectContent>
                     {careers.map((c) => (

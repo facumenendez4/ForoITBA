@@ -2,29 +2,22 @@
 
 import { useState, useMemo } from "react"
 import Link from "next/link"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent } from "@/components/ui/card"
-import {
-  MessageSquare,
-  BookOpen,
-  Lightbulb,
-  ThumbsUp,
-  ThumbsDown,
-} from "lucide-react"
+import { buttonVariants } from "@/components/ui/button"
+import { MessageSquare, BookOpen, Lightbulb, LogIn } from "lucide-react"
+import { cn } from "@/lib/utils"
+import { ReviewForm } from "@/components/review-form"
+import { ContributionForm } from "@/components/contribution-form"
+import { VoteButtons } from "@/components/vote-buttons"
 import type {
   Subject,
-  SubjectMetrics,
   PublicReview,
   PublicContribution,
+  Viewer,
+  MyReview,
 } from "@/lib/queries"
 
 type CareerInfo = {
@@ -39,10 +32,29 @@ type CareerInfo = {
 
 type Props = {
   subject: Subject
+  slug: string
   careers: CareerInfo[]
-  metrics: SubjectMetrics[]
   reviews: PublicReview[]
   contributions: PublicContribution[]
+  viewer: Viewer | null
+  myReview: MyReview | null
+  myVotes: Record<string, 1 | -1>
+}
+
+/** Moda de una lista; en empate gana el valor más alto (criterio del brief). */
+function mode(nums: number[]): number | null {
+  if (nums.length === 0) return null
+  const counts = new Map<number, number>()
+  for (const n of nums) counts.set(n, (counts.get(n) ?? 0) + 1)
+  let best: number | null = null
+  let bestCount = -1
+  for (const [val, cnt] of counts) {
+    if (cnt > bestCount || (cnt === bestCount && val > (best ?? -Infinity))) {
+      best = val
+      bestCount = cnt
+    }
+  }
+  return best
 }
 
 const DIFFICULTY_LABELS: Record<number, string> = {
@@ -71,133 +83,236 @@ const DIFFICULTY_TEXT_COLORS: Record<number, string> = {
 
 export function SubjectContent({
   subject,
+  slug,
   careers,
-  metrics,
   reviews,
   contributions,
+  viewer,
+  myReview,
+  myVotes,
 }: Props) {
-  const [selectedCareerId, setSelectedCareerId] = useState(careers[0]?.id ?? "")
+  const isAuthed = viewer != null
+  const careerOptions = careers.map((c) => ({
+    id: c.id,
+    name: c.name,
+    credits: c.credits,
+  }))
+  // Carrera por defecto al escribir: la del perfil si dicta esta materia, si no la primera.
+  const defaultCareerId =
+    careers.find((c) => c.id === viewer?.careerId)?.id ?? careers[0]?.id ?? ""
 
-  const selectedCareer = careers.find((c) => c.id === selectedCareerId)
-  const selectedMetrics = metrics.find((m) => m.career_id === selectedCareerId)
+  // Selección de carreras a considerar en las métricas. Por defecto: todas (= general).
+  const [included, setIncluded] = useState<Set<string>>(
+    () => new Set(careers.map((c) => c.id))
+  )
 
-  const creditsByCareer = useMemo(() => {
-    const unique = new Set(careers.map((c) => c.credits))
-    if (unique.size === 1) return null
-    return careers.map((c) => `${c.credits} en ${c.name}`).join(", ")
-  }, [careers])
+  function toggleCareer(id: string) {
+    setIncluded((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }
+
+  const reviewsByCareer = useMemo(() => {
+    const m = new Map<string, number>()
+    for (const r of reviews) m.set(r.career_id, (m.get(r.career_id) ?? 0) + 1)
+    return m
+  }, [reviews])
+
+  // Métricas agregadas sobre las carreras seleccionadas.
+  const agg = useMemo(() => {
+    const filtered = reviews.filter((r) => included.has(r.career_id))
+    const count = filtered.length
+    const diffDist: Record<string, number> = {}
+    const workDist: Record<string, number> = {}
+    const usefDist: Record<string, number> = {}
+    for (const r of filtered) {
+      diffDist[r.difficulty] = (diffDist[r.difficulty] ?? 0) + 1
+      workDist[r.workload] = (workDist[r.workload] ?? 0) + 1
+      usefDist[r.usefulness] = (usefDist[r.usefulness] ?? 0) + 1
+    }
+    const includedCareers = careers.filter((c) => included.has(c.id))
+    return {
+      count,
+      difficultyMode: mode(filtered.map((r) => r.difficulty)),
+      difficultyDist: diffDist,
+      workloadMode: mode(filtered.map((r) => r.workload)),
+      workloadDist: workDist,
+      usefulnessAvg: count
+        ? Math.round(
+            (filtered.reduce((s, r) => s + r.usefulness, 0) / count) * 10
+          ) / 10
+        : null,
+      usefulnessDist: usefDist,
+      // Créditos de referencia: la moda de créditos entre las carreras elegidas.
+      credits: mode(includedCareers.map((c) => c.credits)),
+    }
+  }, [reviews, included, careers])
+
+  // Detalle del plan según la selección.
+  const includedCareers = careers.filter((c) => included.has(c.id))
+  const creditsDisplay = useMemo(() => {
+    const unique = new Set(includedCareers.map((c) => c.credits))
+    if (unique.size === 0) return "—"
+    if (unique.size === 1) return String([...unique][0])
+    return includedCareers.map((c) => `${c.credits} en ${c.name}`).join(", ")
+  }, [includedCareers])
+  const singleCareer = includedCareers.length === 1 ? includedCareers[0] : null
+
+  const allIncluded = included.size === careers.length
 
   const materials = contributions.filter((c) => c.type === "material")
   const tips = contributions.filter((c) => c.type === "consejo")
 
   return (
     <div className="space-y-8">
-      {/* Career selector + metrics */}
+      {/* Career multi-select + aggregated metrics */}
       <section>
         {careers.length > 1 && (
           <div className="mb-4">
-            <label className="text-sm font-medium text-muted-foreground block mb-1.5">
-              Métricas para
-            </label>
-            <Select
-              value={selectedCareerId}
-              onValueChange={(v) => v && setSelectedCareerId(v)}
-            >
-              <SelectTrigger className="w-full max-w-xs">
-                <SelectValue placeholder="Seleccionar carrera">
-                  {selectedCareer?.name}
-                </SelectValue>
-              </SelectTrigger>
-              <SelectContent>
-                {careers.map((c) => (
-                  <SelectItem key={c.id} value={c.id}>
+            <div className="flex items-center justify-between mb-1.5">
+              <label className="text-sm font-medium text-muted-foreground">
+                Métricas {allIncluded ? "generales" : "para las carreras elegidas"}
+              </label>
+              <button
+                type="button"
+                onClick={() =>
+                  setIncluded(
+                    allIncluded
+                      ? new Set()
+                      : new Set(careers.map((c) => c.id))
+                  )
+                }
+                className="text-xs text-primary hover:underline"
+              >
+                {allIncluded ? "Limpiar" : "Todas"}
+              </button>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {careers.map((c) => {
+                const active = included.has(c.id)
+                const n = reviewsByCareer.get(c.id) ?? 0
+                return (
+                  <button
+                    key={c.id}
+                    type="button"
+                    onClick={() => toggleCareer(c.id)}
+                    aria-pressed={active}
+                    className={cn(
+                      "rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+                      active
+                        ? "bg-primary border-transparent text-primary-foreground"
+                        : "border-input text-muted-foreground hover:bg-accent"
+                    )}
+                  >
                     {c.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+                    {n > 0 && (
+                      <span className={active ? "opacity-80" : "opacity-60"}>
+                        {" "}
+                        ({n})
+                      </span>
+                    )}
+                  </button>
+                )
+              })}
+            </div>
           </div>
         )}
 
-        {selectedMetrics && selectedMetrics.review_count > 0 ? (
+        {agg.count > 0 ? (
           <div className="grid gap-4 sm:grid-cols-3">
             <MetricCard
               label="Dificultad"
               value={
-                selectedMetrics.difficulty_mode
-                  ? DIFFICULTY_LABELS[selectedMetrics.difficulty_mode]
+                agg.difficultyMode
+                  ? DIFFICULTY_LABELS[agg.difficultyMode]
                   : "—"
               }
               colorClass={
-                selectedMetrics.difficulty_mode
-                  ? DIFFICULTY_TEXT_COLORS[selectedMetrics.difficulty_mode]
+                agg.difficultyMode
+                  ? DIFFICULTY_TEXT_COLORS[agg.difficultyMode]
                   : ""
               }
             >
-              {selectedMetrics.difficulty_distribution && (
-                <DifficultyBar
-                  distribution={selectedMetrics.difficulty_distribution}
-                  total={selectedMetrics.review_count}
-                />
-              )}
+              <DistributionBar
+                total={agg.count}
+                rows={[1, 2, 3, 4, 5].map((l) => ({
+                  label: DIFFICULTY_LABELS[l],
+                  count: agg.difficultyDist[l] ?? 0,
+                  colorClass: DIFFICULTY_COLORS[l],
+                }))}
+              />
             </MetricCard>
 
             <MetricCard
               label="Carga real"
               value={
-                selectedMetrics.workload_mode != null
-                  ? `${selectedMetrics.workload_mode}/${selectedMetrics.credits ?? selectedCareer?.credits ?? "?"}`
+                agg.workloadMode != null
+                  ? `${agg.workloadMode}/${agg.credits ?? "?"}`
                   : "—"
               }
-              subtitle="moda / créditos"
-            />
+              subtitle="carga / créditos"
+            >
+              <DistributionBar
+                total={agg.count}
+                rows={[1, 3, 6, 9].map((w) => ({
+                  label: `${w} créd.`,
+                  count: agg.workloadDist[w] ?? 0,
+                  colorClass: "bg-primary",
+                }))}
+              />
+            </MetricCard>
 
             <MetricCard
               label="Utilidad"
-              value={
-                selectedMetrics.usefulness_avg != null
-                  ? `${selectedMetrics.usefulness_avg}/5`
-                  : "—"
-              }
-              subtitle={`${selectedMetrics.review_count} reseña${selectedMetrics.review_count !== 1 ? "s" : ""}`}
-            />
+              value={agg.usefulnessAvg != null ? `${agg.usefulnessAvg}/5` : "—"}
+              subtitle={`${agg.count} reseña${agg.count !== 1 ? "s" : ""}`}
+            >
+              <DistributionBar
+                total={agg.count}
+                rows={[1, 2, 3, 4, 5].map((u) => ({
+                  label: `${u}/5`,
+                  count: agg.usefulnessDist[u] ?? 0,
+                  colorClass: "bg-primary",
+                }))}
+              />
+            </MetricCard>
           </div>
         ) : (
           <Card>
             <CardContent className="py-6 text-center text-sm text-muted-foreground">
-              {careers.length > 0
-                ? `Sin reseñas para ${selectedCareer?.name ?? "esta carrera"} aún.`
-                : "Sin reseñas aún."}
+              {included.size === 0
+                ? "Elegí al menos una carrera para ver métricas."
+                : "Sin reseñas para la selección aún."}
             </CardContent>
           </Card>
         )}
       </section>
 
-      {/* Subject info */}
+      {/* Subject info (según la selección de carreras) */}
       <section className="space-y-3">
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
           <div>
             <span className="text-muted-foreground">Créditos: </span>
+            <span className="font-medium">{creditsDisplay}</span>
+          </div>
+          <div>
+            <span className="text-muted-foreground">Ubicación: </span>
             <span className="font-medium">
-              {creditsByCareer ?? selectedCareer?.credits ?? "—"}
+              {singleCareer
+                ? `${singleCareer.term}${singleCareer.isElective ? " (Electiva)" : ""}`
+                : "Varía según carrera"}
             </span>
           </div>
-          {selectedCareer && (
-            <div>
-              <span className="text-muted-foreground">Ubicación: </span>
-              <span className="font-medium">
-                {selectedCareer.term}
-                {selectedCareer.isElective && " (Electiva)"}
-              </span>
-            </div>
-          )}
         </div>
 
-        {selectedCareer && selectedCareer.prerequisites.length > 0 && (
+        {singleCareer && singleCareer.prerequisites.length > 0 && (
           <div className="text-sm">
             <span className="text-muted-foreground">Correlativas: </span>
             <span className="font-medium">
-              {selectedCareer.prerequisites.join(", ")}
+              {singleCareer.prerequisites.join(", ")}
             </span>
           </div>
         )}
@@ -223,6 +338,21 @@ export function SubjectContent({
         </TabsList>
 
         <TabsContent value="reviews" className="mt-4 space-y-3">
+          <div className="mb-1">
+            {isAuthed ? (
+              careers.length > 0 && (
+                <ReviewForm
+                  subjectCode={subject.code}
+                  slug={slug}
+                  careers={careerOptions}
+                  defaultCareerId={defaultCareerId}
+                  existing={myReview}
+                />
+              )
+            ) : (
+              <LoginCta text="Iniciá sesión con tu mail @itba.edu.ar para reseñar." />
+            )}
+          </div>
           {reviews.length === 0 ? (
             <EmptyState text="Todavía no hay reseñas. ¡Sé el primero en dejar una!" />
           ) : (
@@ -233,6 +363,21 @@ export function SubjectContent({
         </TabsContent>
 
         <TabsContent value="material" className="mt-4 space-y-3">
+          <div className="mb-1">
+            {isAuthed ? (
+              careers.length > 0 && (
+                <ContributionForm
+                  type="material"
+                  subjectCode={subject.code}
+                  slug={slug}
+                  careers={careerOptions}
+                  defaultCareerId={defaultCareerId}
+                />
+              )
+            ) : (
+              <LoginCta text="Iniciá sesión para compartir material." />
+            )}
+          </div>
           {materials.length === 0 ? (
             <EmptyState text="Sin material compartido aún." />
           ) : (
@@ -241,12 +386,30 @@ export function SubjectContent({
                 key={c.id}
                 contribution={c}
                 careers={careers}
+                slug={slug}
+                myVote={myVotes[c.id] ?? 0}
+                isAuthed={isAuthed}
               />
             ))
           )}
         </TabsContent>
 
         <TabsContent value="tips" className="mt-4 space-y-3">
+          <div className="mb-1">
+            {isAuthed ? (
+              careers.length > 0 && (
+                <ContributionForm
+                  type="consejo"
+                  subjectCode={subject.code}
+                  slug={slug}
+                  careers={careerOptions}
+                  defaultCareerId={defaultCareerId}
+                />
+              )
+            ) : (
+              <LoginCta text="Iniciá sesión para dejar un consejo." />
+            )}
+          </div>
           {tips.length === 0 ? (
             <EmptyState text="Sin consejos aún." />
           ) : (
@@ -255,6 +418,9 @@ export function SubjectContent({
                 key={c.id}
                 contribution={c}
                 careers={careers}
+                slug={slug}
+                myVote={myVotes[c.id] ?? 0}
+                isAuthed={isAuthed}
               />
             ))
           )}
@@ -293,31 +459,28 @@ function MetricCard({
   )
 }
 
-function DifficultyBar({
-  distribution,
+function DistributionBar({
+  rows,
   total,
 }: {
-  distribution: Record<string, number>
+  rows: { label: string; count: number; colorClass: string }[]
   total: number
 }) {
   return (
     <div className="mt-3 space-y-1">
-      {[1, 2, 3, 4, 5].map((level) => {
-        const count = distribution[String(level)] ?? 0
-        const pct = total > 0 ? (count / total) * 100 : 0
+      {rows.map((row) => {
+        const pct = total > 0 ? (row.count / total) * 100 : 0
         return (
-          <div key={level} className="flex items-center gap-2 text-xs">
-            <span className="w-16 text-muted-foreground">
-              {DIFFICULTY_LABELS[level]}
-            </span>
+          <div key={row.label} className="flex items-center gap-2 text-xs">
+            <span className="w-16 text-muted-foreground">{row.label}</span>
             <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
               <div
-                className={`h-full rounded-full ${DIFFICULTY_COLORS[level]}`}
+                className={cn("h-full rounded-full", row.colorClass)}
                 style={{ width: `${pct}%` }}
               />
             </div>
             <span className="w-6 text-right text-muted-foreground">
-              {count}
+              {row.count}
             </span>
           </div>
         )
@@ -340,15 +503,21 @@ function ReviewCard({
       <CardContent className="py-4">
         <div className="flex flex-wrap items-center gap-2 mb-2">
           <Badge
-            variant="outline"
-            className={DIFFICULTY_TEXT_COLORS[review.difficulty]}
+            className={cn(
+              "border-transparent text-white",
+              DIFFICULTY_COLORS[review.difficulty]
+            )}
           >
             {DIFFICULTY_LABELS[review.difficulty]}
           </Badge>
-          <Badge variant="outline">Carga: {review.workload}</Badge>
-          <Badge variant="outline">Utilidad: {review.usefulness}/5</Badge>
+          <Badge variant="secondary" className="font-medium">
+            Carga real: {review.workload}/{career?.credits ?? "?"}
+          </Badge>
+          <Badge variant="secondary" className="font-medium">
+            Utilidad: {review.usefulness}/5
+          </Badge>
           {career && (
-            <Badge variant="secondary" className="text-xs">
+            <Badge variant="outline" className="text-xs">
               {career.name}
             </Badge>
           )}
@@ -374,9 +543,15 @@ function ReviewCard({
 function ContributionCard({
   contribution,
   careers,
+  slug,
+  myVote,
+  isAuthed,
 }: {
   contribution: PublicContribution
   careers: CareerInfo[]
+  slug: string
+  myVote: 0 | 1 | -1
+  isAuthed: boolean
 }) {
   const career = careers.find((c) => c.id === contribution.career_id)
 
@@ -401,15 +576,29 @@ function ContributionCard({
               })}
             </p>
           </div>
-          <div className="flex items-center gap-1 text-xs text-muted-foreground shrink-0">
-            <ThumbsUp className="h-3.5 w-3.5" />
-            <span>{contribution.upvotes}</span>
-            <ThumbsDown className="h-3.5 w-3.5 ml-1" />
-            <span>{Math.abs(contribution.downvotes)}</span>
-          </div>
+          <VoteButtons
+            contributionId={contribution.id}
+            slug={slug}
+            upvotes={contribution.upvotes}
+            downvotes={contribution.downvotes}
+            myVote={myVote}
+            isAuthed={isAuthed}
+          />
         </div>
       </CardContent>
     </Card>
+  )
+}
+
+function LoginCta({ text }: { text: string }) {
+  return (
+    <div className="flex flex-wrap items-center gap-3 rounded-lg border border-dashed p-4 text-sm text-muted-foreground">
+      <span>{text}</span>
+      <Link href="/login" className={buttonVariants({ size: "sm" })}>
+        <LogIn className="mr-2 h-4 w-4" />
+        Ingresar
+      </Link>
+    </div>
   )
 }
 
