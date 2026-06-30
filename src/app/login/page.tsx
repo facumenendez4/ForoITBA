@@ -111,7 +111,7 @@ export default function LoginPage() {
         <Card>
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold">
-              <span className="text-primary">Foro</span>ITBA
+              Foro<span className="text-primary font-extrabold">ITBA</span>
             </CardTitle>
             <CardDescription>
               {mode === "login"

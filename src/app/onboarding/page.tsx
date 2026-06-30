@@ -111,7 +111,7 @@ export default function OnboardingPage() {
         <Card>
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold">
-              ¡Bienvenido a <span className="text-primary">Foro</span>ITBA!
+              ¡Bienvenido a Foro<span className="text-primary font-extrabold">ITBA</span>!
             </CardTitle>
             <CardDescription>
               Elegí tu carrera para personalizar tu experiencia

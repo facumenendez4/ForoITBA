@@ -6,8 +6,8 @@ export function Header() {
   return (
     <header className="border-b">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
-        <Link href="/" className="text-xl font-bold tracking-tight">
-          <span className="text-primary">Foro</span>ITBA
+        <Link href="/" className="text-2xl font-bold tracking-tight">
+          Foro<span className="text-primary font-extrabold">ITBA</span>
         </Link>
         <div className="flex items-center gap-2">
           <ThemeToggle />
