@@ -1,0 +1,1101 @@
+carrera,cuatrimestre,codigo,materia,creditos,creditos_requeridos,correlativas
+Bioingeniería,Año 1 - Cuatrimestre 1,12.67,Química General,6,,
+Bioingeniería,Año 1 - Cuatrimestre 1,71.58,Informática General,3,,
+Bioingeniería,Año 1 - Cuatrimestre 1,92.01,Análisis Matemático I,6,,
+Bioingeniería,Año 1 - Cuatrimestre 1,93.18,Álgebra Lineal,6,,
+Bioingeniería,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,,
+Bioingeniería,Año 1 - Cuatrimestre 2,13.02,Fundamentos de Química Orgánica,6,,
+Bioingeniería,Año 1 - Cuatrimestre 2,16.55,Biología,3,,
+Bioingeniería,Año 1 - Cuatrimestre 2,31.08,Sistemas de Representación,3,,
+Bioingeniería,Año 1 - Cuatrimestre 2,92.02,Análisis Matemático II,6,,
+Bioingeniería,Año 1 - Cuatrimestre 2,93.41,Física I,6,,
+Bioingeniería,Año 1 - Cuatrimestre 2,94.51,Inglés I,0,,
+Bioingeniería,Año 2 - Cuatrimestre 1,16.01,Biología Molecular y Celular,6,,
+Bioingeniería,Año 2 - Cuatrimestre 1,71.59,Estructura de Datos y Programación,6,,
+Bioingeniería,Año 2 - Cuatrimestre 1,92.03,Análisis Matemático III,6,,
+Bioingeniería,Año 2 - Cuatrimestre 1,93.42,Física II,6,,
+Bioingeniería,Año 2 - Cuatrimestre 2,16.02,Histología y Anatomía,6,,
+Bioingeniería,Año 2 - Cuatrimestre 2,92.04,Análisis Matemàtico IV,6,,
+Bioingeniería,Año 2 - Cuatrimestre 2,93.24,Probabilidad y Estadística,6,,
+Bioingeniería,Año 2 - Cuatrimestre 2,93.43,Física III,6,,
+Bioingeniería,Año 2 - Cuatrimestre 2,94.52,Inglés II,0,,
+Bioingeniería,Año 3 - Cuatrimestre 1,16.03,Fisiología,6,,
+Bioingeniería,Año 3 - Cuatrimestre 1,16.64,Mecánica de biomateriales y tejidos,8,,
+Bioingeniería,Año 3 - Cuatrimestre 1,21.06,Electrotecnia,3,,
+Bioingeniería,Año 3 - Cuatrimestre 1,93.61,Física IV,4,,
+Bioingeniería,Año 3 - Cuatrimestre 1,94.43,Metodología del Diseño,3,,
+Bioingeniería,Año 3 - Cuatrimestre 2,16.24,Ingeniería de Rehabilitación,3,,
+Bioingeniería,Año 3 - Cuatrimestre 2,16.44,Física Médica,3,,
+Bioingeniería,Año 3 - Cuatrimestre 2,16.68,Señales y Sistemas,6,,
+Bioingeniería,Año 3 - Cuatrimestre 2,23.02,Electrónica Analógica y Digital,6,,
+Bioingeniería,Año 3 - Cuatrimestre 2,93.54,Métodos Numéricos,3,,
+Bioingeniería,Año 3 - Cuatrimestre 2,94.44,Proyecto Interdisciplinario,3,,
+Bioingeniería,Año 4 - Cuatrimestre 1,11.15,Organización Industrial,3,,
+Bioingeniería,Año 4 - Cuatrimestre 1,16.17,Instrumentación Biomédica I,6,,
+Bioingeniería,Año 4 - Cuatrimestre 1,16.63,Procesamiento de Señales e Imágenes Biomédicas,6,,
+Bioingeniería,Año 4 - Cuatrimestre 1,23.16,Sistemas de Control,3,,
+Bioingeniería,Año 4 - Cuatrimestre 1,61.27,Análisis de Coyuntura Económica,3,,
+Bioingeniería,Año 4 - Cuatrimestre 2,12.83,Seguridad Ocupacional y Ambiental,3,,
+Bioingeniería,Año 4 - Cuatrimestre 2,16.18,Instrumentación Biomédica II,6,,
+Bioingeniería,Año 4 - Cuatrimestre 2,16.25,Ingeniería Clínica,6,,
+Bioingeniería,Año 4 - Cuatrimestre 2,61.16,Introducción a las Finanzas,3,,
+Bioingeniería,Año 4 - Cuatrimestre 2,61.31,Derecho para Ingenieros,3,,
+Bioingeniería,Año 5 - Cuatrimestre 1,16.30,Proyecto Final de Carrera (Anual),6,,
+Bioingeniería,Año 5 - Cuatrimestre 2,94.65,Practica Profesional supervisada,0,,
+Bioingeniería,Electivas,10.07,Creatividad,3,,
+Bioingeniería,Electivas,10.08,Energías Renovables,3,,
+Bioingeniería,Electivas,10.09,Formación para Emprendedores,3,,
+Bioingeniería,Electivas,11.19,Prototipado e Impresión 3D,3,,
+Bioingeniería,Electivas,11.76,Gestión de Calidad,3,,
+Bioingeniería,Electivas,14.72,Analytics,1,,
+Bioingeniería,Electivas,15.13,Innovación en materiales Biobasados,1,,
+Bioingeniería,Electivas,16.04,Neurociencias y Desarrollo Productivo,3,,
+Bioingeniería,Electivas,16.09,Ventilación Mecánica,3,,
+Bioingeniería,Electivas,16.14,Fisiología Cuantitativa,6,,
+Bioingeniería,Electivas,16.19,Biosensores,3,,
+Bioingeniería,Electivas,16.20,Biomedicina Estructural y Computacional,6,,
+Bioingeniería,Electivas,16.21,Bioinformática,6,,
+Bioingeniería,Electivas,16.22,Informática Médica,6,,
+Bioingeniería,Electivas,16.23,Órganos Artificiales,6,,
+Bioingeniería,Electivas,16.27,Ingeniería de Tejidos,3,,
+Bioingeniería,Electivas,16.29,Diseño de Fármacos,3,,
+Bioingeniería,Electivas,16.32,Redes Neuronales en Bioingeniería,3,,
+Bioingeniería,Electivas,16.43,Bioestadística,3,,
+Bioingeniería,Electivas,16.45,Edición Genética,1,,
+Bioingeniería,Electivas,16.46,Reprogramación celular y epigenética,1,,
+Bioingeniería,Electivas,16.51,Int. a la Ciencia de Datos Aplicados a la Salud,1,,
+Bioingeniería,Electivas,16.52,Inmunología Biológica,3,,
+Bioingeniería,Electivas,16.53,Biotecnología aplicada,3,,
+Bioingeniería,Electivas,16.54,Regulaciones Biomédicas,3,,
+Bioingeniería,Electivas,16.57,Robótica Bioinspirada,3,,
+Bioingeniería,Electivas,16.58,Biomecánica del Deporte,3,,
+Bioingeniería,Electivas,16.59,Microfluídica,1,,
+Bioingeniería,Electivas,16.65,Genética del Comportamiento,3,,
+Bioingeniería,Electivas,16.66,Reprogramación Celular,3,,
+Bioingeniería,Electivas,16.67,Inmunología Biológica y Evasión Inmune,3,,
+Bioingeniería,Electivas,16.69,Nanotecnología en Medicina y Cuidado de la Salud,3,,
+Bioingeniería,Electivas,16.71,Ingeniería del Cerebro y el Comportamiento,3,,
+Bioingeniería,Electivas,16.72,Análisis y Tratamiento de Imágenes,3,,
+Bioingeniería,Electivas,16.73,Sistemas de Imágenes en Diagnóstico Médico,3,,
+Bioingeniería,Electivas,16.74,Interfaces Cerebro Computadora y Neurorobótica,3,,
+Bioingeniería,Electivas,16.75,Gestión de Procesos Hospitalarios,3,,
+Bioingeniería,Electivas,16.76,Bases Fisicomatemáticas de la Biomecánica del Deporte,1,,
+Bioingeniería,Electivas,16.77,Tecnologías emergentes en plantas con aplicaciones terapéuticas,1,,
+Bioingeniería,Electivas,16.78,Enfermedades del Sistema Nervioso: Implicancias e innovaciones,1,,
+Bioingeniería,Electivas,16.79,Neurociencias,3,,
+Bioingeniería,Electivas,16.80,Microfluídica,3,,
+Bioingeniería,Electivas,16.81,Neurobiología del Aprendizaje y Control del Movimiento,3,,
+Bioingeniería,Electivas,16.82,Neurociencia Computacional,3,,
+Bioingeniería,Electivas,16.83,Introducción a cultivos celulares derivados de tejido nervioso,1,,
+Bioingeniería,Electivas,16.84,Informática en Salud,3,,
+Bioingeniería,Electivas,16.85,Procesamiento Avanzado de Imágenes en Biología y Biomedicina,3,,
+Bioingeniería,Electivas,16.87,Microfabricación,1,,
+Bioingeniería,Electivas,16.88,Avances Tecnol. para el estudio del SNC en mod. animales,1,,
+Bioingeniería,Electivas,16.89,Laboratorio de Neurobiología de la Memoria,1,,
+Bioingeniería,Electivas,16.90,Laboratorio de Inmunología Biológica,1,,
+Bioingeniería,Electivas,16.91,Sistemas Embebidos: Aplicaciones en Biomedicina,1,,
+Bioingeniería,Electivas,16.92,Nanocarriers biológicos: vesículas extracelulares y su potencial biotecnológico,1,,
+Bioingeniería,Electivas,16.93,Análisis crítico de evidencia en bioingeniería,1,,
+Bioingeniería,Electivas,16.94,Biomimética,1,,
+Bioingeniería,Electivas,16.95,Startups basadas en ciencia,1,,
+Bioingeniería,Electivas,16.96,Laboratorio de Bioimpresión,1,,
+Bioingeniería,Electivas,16.97,Modelado en mecánica cardiovascular,3,,
+Bioingeniería,Electivas,16.98,Glicobiología Funcional,3,,
+Bioingeniería,Electivas,17.15,Introducción a la Ingeniería Ambiental,3,,
+Bioingeniería,Electivas,17.16,Introducción a la Nanotecnología,3,,
+Bioingeniería,Electivas,22.57,Microprocesadores y Control,6,,
+Bioingeniería,Electivas,22.94,Control Discreto,6,,
+Bioingeniería,Electivas,23.05,Acústica para Ingenieros,3,,
+Bioingeniería,Electivas,23.08,Control Avanzado,3,,
+Bioingeniería,Electivas,23.15,Realidad Virtual,3,,
+Bioingeniería,Electivas,25.88,Redes Neuronales III,3,,
+Bioingeniería,Electivas,30.41,Diseño Mecánico I,6,,
+Bioingeniería,Electivas,30.63,Cadenas de Valor Circulares,3,,
+Bioingeniería,Electivas,30.64,Bioenergía,2,,
+Bioingeniería,Electivas,31.25,Termodinámica,3,,
+Bioingeniería,Electivas,61.05,Economía de la Salud,3,,
+Bioingeniería,Electivas,71.22,Sistemas de Inteligencia Artificial,3,,
+Bioingeniería,Electivas,71.38,Programación web,3,,
+Bioingeniería,Electivas,71.88,Gestión de Datos,6,,
+Bioingeniería,Electivas,71.94,Introducción al Diseño de Bases de Datos Relacionales y No-Relacionales,3,,
+Bioingeniería,Electivas,72.75,Aprendizaje Automático (Machine Learning),3,,
+Bioingeniería,Electivas,72.87,Diseño Sonoro para Animación y Videojuegos,3,,
+Bioingeniería,Electivas,72.90,Internet de las Cosas (IoT),3,,
+Bioingeniería,Electivas,72.96,Proyecto de Aplicaciones Móviles,3,,
+Bioingeniería,Electivas,73.61,Neurorobótica,1,,
+Bioingeniería,Electivas,73.63,Redes Equivariantes,1,,
+Bioingeniería,Electivas,73.66,Procesamiento de Imágenes Satelitales,1,,
+Bioingeniería,Electivas,73.67,Análisis de series de tiempo con Inteligencia Artificial,1,,
+Bioingeniería,Electivas,73.70,Análisis de datos en neurociencias,3,,
+Bioingeniería,Electivas,81.75,Fund. del desarrollo de software y análisis de datos en Python,1,,
+Bioingeniería,Electivas,82.12,Análisis de Información Biomédica,3,,
+Bioingeniería,Electivas,82.19,Analítica del Deporte,3,,
+Bioingeniería,Electivas,92.07,Análisis Matemático V,4,,
+Bioingeniería,Electivas,92.08,Procesos Estocásticos,3,,
+Bioingeniería,Electivas,92.09,Complementos de Análisis Matemático IV,0,,
+Bioingeniería,Electivas,92.90,Complementos de Matemática,3,,
+Bioingeniería,Electivas,92.92,Complementos de Física de la Relatividad,2,,
+Bioingeniería,Electivas,92.97,Complementos de Matemática V,2,,
+Bioingeniería,Electivas,93.75,Métodos Numéricos Avanzados,6,,
+Bioingeniería,Electivas,94.19,Comportamiento Organizacional,3,,
+Bioingeniería,Electivas,94.24,Metodología del Aprendizaje,3,,
+Bioingeniería,Electivas,94.40,Estructura de las Organizaciones,3,,
+Bioingeniería,Electivas,94.42,Comunicación Estratégica,3,,
+Ingeniería Civil,Año 1 - Cuatrimestre 1,12.67,Química General,6,,
+Ingeniería Civil,Año 1 - Cuatrimestre 1,71.58,Informática General,3,,
+Ingeniería Civil,Año 1 - Cuatrimestre 1,92.01,Análisis Matemático I,6,,
+Ingeniería Civil,Año 1 - Cuatrimestre 1,93.18,Álgebra Lineal,6,,
+Ingeniería Civil,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,,
+Ingeniería Civil,Año 1 - Cuatrimestre 2,16.55,Biología,3,,
+Ingeniería Civil,Año 1 - Cuatrimestre 2,31.08,Sistemas de Representación,3,,
+Ingeniería Civil,Año 1 - Cuatrimestre 2,67.04,Introducción a la temática social,3,,
+Ingeniería Civil,Año 1 - Cuatrimestre 2,71.90,Certificaciones tecnológicas,0,,
+Ingeniería Civil,Año 1 - Cuatrimestre 2,92.02,Análisis Matemático II,6,,
+Ingeniería Civil,Año 1 - Cuatrimestre 2,93.41,Física I,6,,
+Ingeniería Civil,Año 2 - Cuatrimestre 1,67.02,Estática,6,,
+Ingeniería Civil,Año 2 - Cuatrimestre 1,92.03,Análisis Matemático III,6,,
+Ingeniería Civil,Año 2 - Cuatrimestre 1,93.24,Probabilidad y Estadística,6,,
+Ingeniería Civil,Año 2 - Cuatrimestre 1,93.42,Física II,6,,
+Ingeniería Civil,Año 2 - Cuatrimestre 1,94.51,Inglés I,0,,
+Ingeniería Civil,Año 2 - Cuatrimestre 2,31.22,Mecánica de Fluidos,6,,
+Ingeniería Civil,Año 2 - Cuatrimestre 2,67.01,Tecnología de materiales,3,,
+Ingeniería Civil,Año 2 - Cuatrimestre 2,67.03,Resistencia de Materiales,6,,
+Ingeniería Civil,Año 2 - Cuatrimestre 2,93.43,Física III,6,,
+Ingeniería Civil,Año 3 - Cuatrimestre 1,11.15,Organización Industrial,3,,
+Ingeniería Civil,Año 3 - Cuatrimestre 1,67.05,Tecnología del Hormigón,3,,
+Ingeniería Civil,Año 3 - Cuatrimestre 1,67.06,Construcciones,6,,
+Ingeniería Civil,Año 3 - Cuatrimestre 1,67.08,Análisis Estructural,4,,
+Ingeniería Civil,Año 3 - Cuatrimestre 1,93.07,Métodos Numéricos,3,,
+Ingeniería Civil,Año 3 - Cuatrimestre 1,94.43,Metodología del Diseño,3,,
+Ingeniería Civil,Año 3 - Cuatrimestre 2,46.21,Geología I,3,,
+Ingeniería Civil,Año 3 - Cuatrimestre 2,67.07,Geotopografía,6,,
+Ingeniería Civil,Año 3 - Cuatrimestre 2,67.09,Instalaciones,6,,
+Ingeniería Civil,Año 3 - Cuatrimestre 2,67.10,Hormigón I,4,,
+Ingeniería Civil,Año 3 - Cuatrimestre 2,94.44,Proyecto Interdisciplinario,3,,
+Ingeniería Civil,Año 3 - Cuatrimestre 2,94.52,Inglés II,0,,
+Ingeniería Civil,Año 4 - Cuatrimestre 1,61.27,Análisis de Coyuntura Económica,3,,
+Ingeniería Civil,Año 4 - Cuatrimestre 1,61.31,Derecho para Ingenieros,3,,
+Ingeniería Civil,Año 4 - Cuatrimestre 1,67.11,Evaluación de Impacto Ambiental y Social,2,,
+Ingeniería Civil,Año 4 - Cuatrimestre 1,67.12,Geotecnia,6,,
+Ingeniería Civil,Año 4 - Cuatrimestre 1,67.13,Hidrología y obras hidráulicas,4,,
+Ingeniería Civil,Año 4 - Cuatrimestre 2,67.14,Hormigón II,4,,
+Ingeniería Civil,Año 4 - Cuatrimestre 2,67.15,Planeamiento territorial y urbano,3,,
+Ingeniería Civil,Año 4 - Cuatrimestre 2,67.16,Vías de Comunicación,6,,
+Ingeniería Civil,Año 4 - Cuatrimestre 2,67.17,Higiene y Seguridad en Obras Civiles,3,,
+Ingeniería Civil,Año 5 - Cuatrimestre 1,17.20,Agua y Efluentes Líquidos,3,,
+Ingeniería Civil,Año 5 - Cuatrimestre 1,67.18,Proyecto Final,6,,
+Ingeniería Civil,Año 5 - Cuatrimestre 1,67.19,Cimentaciones,4,,
+Ingeniería Civil,Año 5 - Cuatrimestre 1,67.20,Estructuras Metálicas y de Madera,4,,
+Ingeniería Civil,Año 5 - Cuatrimestre 1,67.21,Organización y conducción de obras,3,,
+Ingeniería Civil,Año 5 - Cuatrimestre 1,67.22,Auditorías ambientales,3,,
+Ingeniería Civil,Año 5 - Cuatrimestre 2,94.65,Practica Profesional supervisada,0,,
+Ingeniería Civil,Electivas,10.07,Creatividad,3,,
+Ingeniería Civil,Electivas,10.08,Energías Renovables,3,,
+Ingeniería Civil,Electivas,10.09,Formación para Emprendedores,3,,
+Ingeniería Civil,Electivas,10.12,Energías Convencionales,3,,
+Ingeniería Civil,Electivas,11.05,Calidad,3,,
+Ingeniería Civil,Electivas,11.19,Prototipado e Impresión 3D,3,,
+Ingeniería Civil,Electivas,11.39,Marketing,3,,
+Ingeniería Civil,Electivas,11.46,Planeamiento Estratégico,3,,
+Ingeniería Civil,Electivas,11.73,Teoría de la Decisión,3,,
+Ingeniería Civil,Electivas,11.76,Gestión de Calidad,3,,
+Ingeniería Civil,Electivas,11.84,Gestión de Proyectos,3,,
+Ingeniería Civil,Electivas,11.89,Formulación y Evaluación de Proyectos,3,,
+Ingeniería Civil,Electivas,16.04,Neurociencias y Desarrollo Productivo,3,,
+Ingeniería Civil,Electivas,25.63,Redes Neuronales,3,,
+Ingeniería Civil,Electivas,25.64,Deep Learning,3,,
+Ingeniería Civil,Electivas,25.66,Acústica para Ingenieros,3,,
+Ingeniería Civil,Electivas,25.69,Introducción a la Investigación,3,,
+Ingeniería Civil,Electivas,46.82,Evaluación de Proyectos,3,,
+Ingeniería Civil,Electivas,47.87,Desarrollo de Negocios,3,,
+Ingeniería Civil,Electivas,61.04,Sistema Monetario y Financiero en Argentina,3,,
+Ingeniería Civil,Electivas,61.09,Economía Empresaria,6,,
+Ingeniería Civil,Electivas,61.16,Introducción a las Finanzas,3,,
+Ingeniería Civil,Electivas,61.50,Finanzas de la Empresa,3,,
+Ingeniería Civil,Electivas,67.23,Sustentabilidad y eficiencia energética en la construcción,3,,
+Ingeniería Civil,Electivas,68.99,Introducción a la Ciencia de Ciudades,1,,
+Ingeniería Civil,Electivas,71.22,Sistemas de Inteligencia Artificial,3,,
+Ingeniería Civil,Electivas,71.59,Estructura de Datos y Programación,6,,
+Ingeniería Civil,Electivas,71.88,Gestión de Datos,6,,
+Ingeniería Civil,Electivas,81.59,Gestión de Servicios,3,,
+Ingeniería Civil,Electivas,92.04,Análisis Matemàtico IV,6,,
+Ingeniería Civil,Electivas,92.07,Análisis Matemático V,4,,
+Ingeniería Civil,Electivas,92.20,Representación Gráfica para Ingeniería Civil,1,,
+Ingeniería Civil,Electivas,92.97,Complementos de Matemática V,2,,
+Ingeniería Civil,Electivas,93.75,Métodos Numéricos Avanzados,6,,
+Ingeniería Civil,Electivas,94.40,Estructura de las Organizaciones,3,,
+Ingeniería Civil,Electivas,94.42,Comunicación Estratégica,3,,
+Ingeniería Civil,Electivas,94.61,Filosofía,3,,
+Ingeniería Civil,Electivas,94.62,Ética en los Negocios,3,,
+Ingeniería Electrónica,Año 1 - Cuatrimestre 1,12.67,Química General,6,0,
+Ingeniería Electrónica,Año 1 - Cuatrimestre 1,71.93,Principios de Informática,3,0,
+Ingeniería Electrónica,Año 1 - Cuatrimestre 1,92.01,Análisis Matemático I,6,0,
+Ingeniería Electrónica,Año 1 - Cuatrimestre 1,93.18,Álgebra Lineal,6,0,
+Ingeniería Electrónica,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,0,
+Ingeniería Electrónica,Año 1 - Cuatrimestre 2,25.01,Fundamentos de Electrónica,3,0,71.93
+Ingeniería Electrónica,Año 1 - Cuatrimestre 2,25.02,Programación I,6,0,71.93
+Ingeniería Electrónica,Año 1 - Cuatrimestre 2,31.08,Sistemas de Representación,3,0,
+Ingeniería Electrónica,Año 1 - Cuatrimestre 2,92.02,Análisis Matemático II,6,0,92.01|93.18
+Ingeniería Electrónica,Año 1 - Cuatrimestre 2,93.41,Física I,6,0,92.01
+Ingeniería Electrónica,Año 2 - Cuatrimestre 1,25.03,Algoritmos y Estructuras de Datos,3,0,25.02
+Ingeniería Electrónica,Año 2 - Cuatrimestre 1,92.03,Análisis Matemático III,6,0,92.01|93.18
+Ingeniería Electrónica,Año 2 - Cuatrimestre 1,93.16,Matemática Discreta,3,0,93.18
+Ingeniería Electrónica,Año 2 - Cuatrimestre 1,93.24,Probabilidad y Estadística,6,0,92.02
+Ingeniería Electrónica,Año 2 - Cuatrimestre 1,93.42,Física II,6,0,92.02
+Ingeniería Electrónica,Año 2 - Cuatrimestre 2,16.55,Biología,3,0,
+Ingeniería Electrónica,Año 2 - Cuatrimestre 2,25.10,Teoría de Circuitos 1,6,0,92.03|25.01
+Ingeniería Electrónica,Año 2 - Cuatrimestre 2,92.04,Análisis Matemàtico IV,6,0,92.02|92.03
+Ingeniería Electrónica,Año 2 - Cuatrimestre 2,93.07,Métodos Numéricos,3,0,92.03|93.24
+Ingeniería Electrónica,Año 2 - Cuatrimestre 2,93.43,Física III,6,0,92.03|93.41
+Ingeniería Electrónica,Año 3 - Cuatrimestre 1,25.12,Tecnología de Materiales Electrónicos,4,0,93.42|25.10
+Ingeniería Electrónica,Año 3 - Cuatrimestre 1,25.13,Laboratorio de Electrónica 1,6,0,25.10
+Ingeniería Electrónica,Año 3 - Cuatrimestre 1,25.18,Física Electrónica,3,0,92.04|25.10
+Ingeniería Electrónica,Año 3 - Cuatrimestre 1,92.07,Análisis Matemático V,4,0,92.04
+Ingeniería Electrónica,Año 3 - Cuatrimestre 1,93.61,Física IV,4,0,93.42|93.43
+Ingeniería Electrónica,Año 3 - Cuatrimestre 1,94.43,Metodología del Diseño,3,72,93.24
+Ingeniería Electrónica,Año 3 - Cuatrimestre 2,25.14,Teoría de Circuitos 2,6,0,25.10|25.12|92.07
+Ingeniería Electrónica,Año 3 - Cuatrimestre 2,25.15,Electrónica I,6,0,25.18
+Ingeniería Electrónica,Año 3 - Cuatrimestre 2,25.16,Laboratorio de Electrónica 2,3,0,25.13
+Ingeniería Electrónica,Año 3 - Cuatrimestre 2,25.17,Electrónica II,6,0,25.13
+Ingeniería Electrónica,Año 3 - Cuatrimestre 2,94.44,Proyecto Interdisciplinario,3,0,94.43
+Ingeniería Electrónica,Año 3 - Cuatrimestre 2,94.51,Inglés I,0,0,
+Ingeniería Electrónica,Año 4 - Cuatrimestre 1,25.20,Análisis de Señales y Sistemas Digitales,6,0,93.24|25.14
+Ingeniería Electrónica,Año 4 - Cuatrimestre 1,25.21,Electrónica III,4,0,25.15
+Ingeniería Electrónica,Año 4 - Cuatrimestre 1,25.22,Electromagnetismo,4,0,93.43|92.07
+Ingeniería Electrónica,Año 4 - Cuatrimestre 1,25.23,Sistemas de Control,6,0,92.07
+Ingeniería Electrónica,Año 4 - Cuatrimestre 1,25.24,Laboratorio de Electrónica 3,4,0,25.16
+Ingeniería Electrónica,Año 4 - Cuatrimestre 2,11.15,Organización Industrial,3,0,93.24
+Ingeniería Electrónica,Año 4 - Cuatrimestre 2,25.26,Transmisión de la Información,6,0,25.22|25.20
+Ingeniería Electrónica,Año 4 - Cuatrimestre 2,25.27,Sistemas Embebidos,6,0,25.17|25.16|25.03
+Ingeniería Electrónica,Año 4 - Cuatrimestre 2,25.28,Electrónica IV,4,0,25.24|25.23|25.12
+Ingeniería Electrónica,Año 4 - Cuatrimestre 2,61.27,Análisis de Coyuntura Económica,3,0,93.24
+Ingeniería Electrónica,Año 5 - Cuatrimestre 1,12.83,Seguridad Ocupacional y Ambiental,3,120,
+Ingeniería Electrónica,Año 5 - Cuatrimestre 1,25.30,Electrónica V,4,0,25.27
+Ingeniería Electrónica,Año 5 - Cuatrimestre 1,25.31,Proyectos Electrónicos,4,168,
+Ingeniería Electrónica,Año 5 - Cuatrimestre 1,25.32,Proyecto Integrador (anual) (Anual),6,168,
+Ingeniería Electrónica,Año 5 - Cuatrimestre 1,61.16,Introducción a las Finanzas,3,0,11.15|61.27
+Ingeniería Electrónica,Año 5 - Cuatrimestre 2,61.31,Derecho para Ingenieros,3,144,
+Ingeniería Electrónica,Año 5 - Cuatrimestre 2,94.52,Inglés II,0,0,94.51
+Ingeniería Electrónica,Año 5 - Cuatrimestre 2,94.65,Practica Profesional supervisada,0,144,
+Ingeniería Electrónica,Electivas,10.07,Creatividad,3,0,
+Ingeniería Electrónica,Electivas,10.09,Formación para Emprendedores,3,96,
+Ingeniería Electrónica,Electivas,11.34,Taller de Modelización de Productos,3,0,
+Ingeniería Electrónica,Electivas,12.02,Química II,6,0,
+Ingeniería Electrónica,Electivas,14.72,Analytics,1,0,
+Ingeniería Electrónica,Electivas,14.89,Ventas,1,0,
+Ingeniería Electrónica,Electivas,15.09,"Agile, Lean y Lean Six Sigma",1,0,
+Ingeniería Electrónica,Electivas,15.79,Metodología de la Investigación,3,0,
+Ingeniería Electrónica,Electivas,16.04,Neurociencias y Desarrollo Productivo,3,96,
+Ingeniería Electrónica,Electivas,16.87,Microfabricación,1,0,
+Ingeniería Electrónica,Electivas,22.22,Antenas y Radiopropagacion,6,0,
+Ingeniería Electrónica,Electivas,22.29,Microondas,6,0,
+Ingeniería Electrónica,Electivas,22.46,Procesamiento Adaptativo de Señales,6,0,
+Ingeniería Electrónica,Electivas,22.47,Procesamiento de Voz,3,0,
+Ingeniería Electrónica,Electivas,22.48,Procesamiento de Imágenes,3,0,
+Ingeniería Electrónica,Electivas,22.64,Comunicaciones Digitales,6,0,
+Ingeniería Electrónica,Electivas,22.66,Redes Digitales,6,0,
+Ingeniería Electrónica,Electivas,22.88,Sensores y Actuadores,6,0,
+Ingeniería Electrónica,Electivas,22.90,Automación Industrial,6,0,
+Ingeniería Electrónica,Electivas,22.93,Control Automático,6,0,
+Ingeniería Electrónica,Electivas,23.10,Formación General II,3,0,
+Ingeniería Electrónica,Electivas,25.04,Computación Cuántica,6,144,
+Ingeniería Electrónica,Electivas,25.40,Transmisión Digital y Codificación,3,0,25.26
+Ingeniería Electrónica,Electivas,25.41,Sistemas de Comunicaciones de Datos,3,0,25.26
+Ingeniería Electrónica,Electivas,25.42,Análisis de Sistemas Estocásticos,3,0,25.26
+Ingeniería Electrónica,Electivas,25.43,Laboratorio de Procesamiento de Señales,3,144,25.20
+Ingeniería Electrónica,Electivas,25.51,Electrónica aplicada a Movilidad Eléctrica,4,96,
+Ingeniería Electrónica,Electivas,25.52,Electrónica de Potencia,4,0,25.28
+Ingeniería Electrónica,Electivas,25.53,Señales Aleatorias,4,0,25.26
+Ingeniería Electrónica,Electivas,25.54,Física Electrónica,3,0,
+Ingeniería Electrónica,Electivas,25.55,Microelectrónica,3,0,25.17|25.15
+Ingeniería Electrónica,Electivas,25.56,Diseño Físico de Circuitos Integrados,3,0,25.55
+Ingeniería Electrónica,Electivas,25.57,Diseño Analógico de Circuitos Integrados (Anual),6,0,25.56
+Ingeniería Electrónica,Electivas,25.59,Dispositivos Lógicos Programables,3,0,25.56
+Ingeniería Electrónica,Electivas,25.60,Control Avanzado,3,0,25.23
+Ingeniería Electrónica,Electivas,25.61,Tecnologías para el agro,3,96,
+Ingeniería Electrónica,Electivas,25.62,Electrónica Aeroespacial,3,96,
+Ingeniería Electrónica,Electivas,25.63,Redes Neuronales,3,96,
+Ingeniería Electrónica,Electivas,25.64,Deep Learning,3,96,
+Ingeniería Electrónica,Electivas,25.65,Realidad Virtual,3,0,93.18|25.03
+Ingeniería Electrónica,Electivas,25.66,Acústica para Ingenieros,3,0,92.07
+Ingeniería Electrónica,Electivas,25.67,Laboratorio de Dsp_fpga,6,0,25.17|25.20
+Ingeniería Electrónica,Electivas,25.68,Electrónica aplicada a Energías alternativas,3,0,25.28
+Ingeniería Electrónica,Electivas,25.70,Diseño analógico de circuitos integrados,6,0,25.56
+Ingeniería Electrónica,Electivas,25.71,Diseño analógico de Sistemas integrados,6,0,25.70
+Ingeniería Electrónica,Electivas,25.72,Diseño digital de circuitos integrados,6,0,25.56
+Ingeniería Electrónica,Electivas,25.73,Verificación de Circuitos Digitales Integrados,6,0,25.72
+Ingeniería Electrónica,Electivas,25.74,Verificación de Sistemas Digitales,3,0,25.18
+Ingeniería Electrónica,Electivas,25.80,Introducción a la programación orientada a objetos,3,0,
+Ingeniería Electrónica,Electivas,25.81,Principios de Electrotecnia,2,0,
+Ingeniería Electrónica,Electivas,25.82,Circuitos de Audio,2,0,
+Ingeniería Electrónica,Electivas,25.83,Guías de ondas,2,0,
+Ingeniería Electrónica,Electivas,25.84,Convertidores de potencia,2,0,
+Ingeniería Electrónica,Electivas,25.85,Programación en bajo nivel,2,0,
+Ingeniería Electrónica,Electivas,25.86,Procesamiento Avanzado de Señales,3,0,25.53
+Ingeniería Electrónica,Electivas,25.87,Redes Neuronales II,3,0,25.63
+Ingeniería Electrónica,Electivas,25.88,Redes Neuronales III,3,0,25.63
+Ingeniería Electrónica,Electivas,25.89,Laboratorio de simulaciones de señales aleatorias,2,0,
+Ingeniería Electrónica,Electivas,25.90,Sistemas de energía espaciales,3,144,25.15
+Ingeniería Electrónica,Electivas,31.81,Tecnología de Máquinas,6,0,
+Ingeniería Electrónica,Electivas,31.99,Mecatrónica Aplicada,3,0,
+Ingeniería Electrónica,Electivas,34.99,"Energía Solar Fotovoltaica, aplicaciones terrestres y espaciales",1,144,
+Ingeniería Electrónica,Electivas,72.75,Aprendizaje Automático (Machine Learning),3,0,
+Ingeniería Electrónica,Electivas,73.67,Análisis de series de tiempo con Inteligencia Artificial,1,0,72.75
+Ingeniería Electrónica,Electivas,81.83,Tecnología e Innovación Aplicada a la Industria,1,0,
+Ingeniería Electrónica,Electivas,92.92,Complementos de Física de la Relatividad,2,0,
+Ingeniería Electrónica,Electivas,92.97,Complementos de Matemática V,2,0,
+Ingeniería Electrónica,Electivas,94.24,Metodología del Aprendizaje,3,0,
+Ingeniería Electrónica,Electivas,94.42,Comunicación Estratégica,3,96,
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 1,12.67,Química General,6,0,
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 1,71.58,Informática General,3,0,
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 1,92.01,Análisis Matemático I,6,0,
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 1,93.18,Álgebra Lineal,6,0,
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,0,
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 2,13.02,Fundamentos de Química Orgánica,6,0,12.67
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 2,16.55,Biología,3,0,
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 2,18.01,Introducción a la Biotecnología,3,0,
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 2,31.08,Sistemas de Representación,3,0,
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 2,92.02,Análisis Matemático II,6,0,92.01|93.18
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 2,93.41,Física I,6,0,92.01
+Ingeniería en Biotecnología,Año 1 - Cuatrimestre 2,94.51,Inglés I,0,0,
+Ingeniería en Biotecnología,Año 2 - Cuatrimestre 1,12.19,Química Analítica,6,0,92.01|93.41|12.67
+Ingeniería en Biotecnología,Año 2 - Cuatrimestre 1,17.03,Bioquímica y Microbiología Aplicadas,5,0,13.02|16.55
+Ingeniería en Biotecnología,Año 2 - Cuatrimestre 1,92.03,Análisis Matemático III,6,0,92.01|93.18
+Ingeniería en Biotecnología,Año 2 - Cuatrimestre 1,93.42,Física II,6,0,92.02
+Ingeniería en Biotecnología,Año 2 - Cuatrimestre 2,12.20,Química-Física,6,0,92.03
+Ingeniería en Biotecnología,Año 2 - Cuatrimestre 2,16.01,Biología Molecular y Celular,6,0,16.55|12.19
+Ingeniería en Biotecnología,Año 2 - Cuatrimestre 2,92.05,Análisis Matemático IV,4,0,92.02|92.03
+Ingeniería en Biotecnología,Año 2 - Cuatrimestre 2,93.24,Probabilidad y Estadística,6,0,92.02
+Ingeniería en Biotecnología,Año 2 - Cuatrimestre 2,94.52,Inglés II,0,0,94.51
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 1,12.26,Termodinámica,6,0,12.20
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 1,17.04,Fenómenos de Transporte,6,0,12.20
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 1,18.02,Fisiología y Genética de Microorganismos,6,0,17.03|16.01
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 1,93.54,Métodos Numéricos,3,0,92.03
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 1,94.43,Metodología del Diseño,3,96,
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 2,11.15,Organización Industrial,3,0,93.24
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 2,12.11,Operaciones Unitarias I,6,0,17.04|12.26
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 2,18.03,Bioprocesos,6,0,18.02|17.04|12.26
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 2,25.23,Sistemas de Control,6,0,71.58|93.42|92.05|12.26
+Ingeniería en Biotecnología,Año 3 - Cuatrimestre 2,94.44,Proyecto Interdisciplinario,3,0,94.43
+Ingeniería en Biotecnología,Año 4 - Cuatrimestre 1,15.88,Calidad de Organizaciones,3,0,11.15
+Ingeniería en Biotecnología,Año 4 - Cuatrimestre 1,18.04,Separaciones Biotecnológicas,4,0,17.03|16.01
+Ingeniería en Biotecnología,Año 4 - Cuatrimestre 1,18.05,Biodepuraciones y biorremediación,4,0,18.02
+Ingeniería en Biotecnología,Año 4 - Cuatrimestre 1,18.06,Ingeniería Genética,4,0,18.02|16.01
+Ingeniería en Biotecnología,Año 4 - Cuatrimestre 1,61.27,Análisis de Coyuntura Económica,3,0,93.24
+Ingeniería en Biotecnología,Año 4 - Cuatrimestre 1,61.31,Derecho para Ingenieros,3,144,
+Ingeniería en Biotecnología,Año 4 - Cuatrimestre 2,11.84,Gestión de Proyectos,3,0,
+Ingeniería en Biotecnología,Año 4 - Cuatrimestre 2,12.83,Seguridad Ocupacional y Ambiental,3,0,11.15
+Ingeniería en Biotecnología,Año 4 - Cuatrimestre 2,61.16,Introducción a las Finanzas,3,0,11.15|61.27
+Ingeniería en Biotecnología,Año 5 - Cuatrimestre 1,18.07,Proyecto final de carrera (Anual),6,192,
+Ingeniería en Biotecnología,Año 5 - Cuatrimestre 2,94.65,Practica Profesional supervisada,0,144,
+Ingeniería en Biotecnología,Electivas,COLAPSADA,Electivas (sin listar - completar fase 2),60,60,
+Ingeniería en Informática,Año 1 - Cuatrimestre 1,31.08,Sistemas de Representación,3,0,
+Ingeniería en Informática,Año 1 - Cuatrimestre 1,72.03,Introducción a la Informática,3,0,
+Ingeniería en Informática,Año 1 - Cuatrimestre 1,93.26,Análisis Matemático I,6,0,
+Ingeniería en Informática,Año 1 - Cuatrimestre 1,93.58,Álgebra,9,0,
+Ingeniería en Informática,Año 1 - Cuatrimestre 1,94.24,Metodología del Aprendizaje,3,0,
+Ingeniería en Informática,Año 1 - Cuatrimestre 2,72.31,Programación Imperativa,9,0,93.58|72.03
+Ingeniería en Informática,Año 1 - Cuatrimestre 2,93.28,Análisis Matemático II,6,0,93.58|93.26
+Ingeniería en Informática,Año 1 - Cuatrimestre 2,93.41,Física I,6,0,93.26
+Ingeniería en Informática,Año 1 - Cuatrimestre 2,93.59,Matemática Discreta,6,0,93.58
+Ingeniería en Informática,Año 2 - Cuatrimestre 1,12.09,Química,3,0,
+Ingeniería en Informática,Año 2 - Cuatrimestre 1,72.32,Diseño y Procesamiento de Documentos XML,3,0,72.31
+Ingeniería en Informática,Año 2 - Cuatrimestre 1,72.33,Programación Orientada a Objetos,6,0,72.31
+Ingeniería en Informática,Año 2 - Cuatrimestre 1,93.35,Lógica Computacional,6,0,93.58
+Ingeniería en Informática,Año 2 - Cuatrimestre 1,93.43,Física III,6,0,93.28|93.41
+Ingeniería en Informática,Año 2 - Cuatrimestre 2,72.08,Arquitectura de Computadoras,6,0,72.31
+Ingeniería en Informática,Año 2 - Cuatrimestre 2,72.34,Estructura de Datos y Algoritmos,6,0,93.59|72.33
+Ingeniería en Informática,Año 2 - Cuatrimestre 2,93.24,Probabilidad y Estadística,6,0,93.28
+Ingeniería en Informática,Año 2 - Cuatrimestre 2,93.42,Física II,6,0,93.28
+Ingeniería en Informática,Año 3 - Cuatrimestre 1,72.11,Sistemas Operativos,6,0,72.08|72.34
+Ingeniería en Informática,Año 3 - Cuatrimestre 1,72.35,Ingenieria de Software I,6,0,72.33
+Ingeniería en Informática,Año 3 - Cuatrimestre 1,72.36,Interacción Hombre-Computadora (HCI),6,0,72.33|72.32
+Ingeniería en Informática,Año 3 - Cuatrimestre 1,72.37,Base de Datos I,6,0,72.34|93.35
+Ingeniería en Informática,Año 3 - Cuatrimestre 2,72.07,Protocolos de Comunicación,6,0,72.11
+Ingeniería en Informática,Año 3 - Cuatrimestre 2,72.38,Proyecto de Aplicaciones Web,6,0,72.11|72.37|72.36|72.35
+Ingeniería en Informática,Año 3 - Cuatrimestre 2,72.39,"Autómatas, Teoría de Lenguajes y Compiladores",6,0,72.34
+Ingeniería en Informática,Año 3 - Cuatrimestre 2,93.07,Métodos Numéricos,3,0,93.28
+Ingeniería en Informática,Año 3 - Cuatrimestre 2,94.21,Formación General I,3,0,
+Ingeniería en Informática,Año 3 - Cuatrimestre 2,94.51,Inglés I,0,0,
+Ingeniería en Informática,Año 4 - Cuatrimestre 1,61.23,Economía para Ingenieros,3,120,
+Ingeniería en Informática,Año 4 - Cuatrimestre 1,61.32,Derecho para Ingenieros,3,120,
+Ingeniería en Informática,Año 4 - Cuatrimestre 1,72.40,Ingenieria del Software II,3,0,72.35
+Ingeniería en Informática,Año 4 - Cuatrimestre 1,72.41,Base de Datos II,6,0,72.37|72.11
+Ingeniería en Informática,Año 4 - Cuatrimestre 1,72.42,Programación de Objetos Distribuidos,3,0,72.07|72.37
+Ingeniería en Informática,Año 4 - Cuatrimestre 1,93.75,Métodos Numéricos Avanzados,6,0,93.07
+Ingeniería en Informática,Año 4 - Cuatrimestre 2,72.25,Simulación de Sistemas,6,140,93.75|72.34|93.07
+Ingeniería en Informática,Año 4 - Cuatrimestre 2,72.27,Sistemas de Inteligencia Artificial,6,120,93.75|93.24|72.34
+Ingeniería en Informática,Año 4 - Cuatrimestre 2,72.43,Gestión de Proyectos Informáticos,3,0,
+Ingeniería en Informática,Año 4 - Cuatrimestre 2,72.44,Criptografía y Seguridad,6,0,72.07
+Ingeniería en Informática,Año 5 - Cuatrimestre 1,12.83,Seguridad Ocupacional y Ambiental,3,140,
+Ingeniería en Informática,Año 5 - Cuatrimestre 1,72.20,Redes de Información,6,171,72.07
+Ingeniería en Informática,Año 5 - Cuatrimestre 1,72.45,Proyecto Final,12,160,
+Ingeniería en Informática,Año 5 - Cuatrimestre 2,72.98,Práctica Laboral,0,144,
+Ingeniería en Informática,Año 5 - Cuatrimestre 2,94.23,Formación General III,3,168,
+Ingeniería en Informática,Año 5 - Cuatrimestre 2,94.52,Inglés II,0,0,
+Ingeniería en Informática,Electivas,10.07,Creatividad,3,96,
+Ingeniería en Informática,Electivas,10.09,Formación para Emprendedores,3,0,
+Ingeniería en Informática,Electivas,11.36,Innovación y Competitividad,3,192,
+Ingeniería en Informática,Electivas,11.83,Gestión de Operaciones,6,0,93.24
+Ingeniería en Informática,Electivas,16.04,Neurociencias y Desarrollo Productivo,3,0,
+Ingeniería en Informática,Electivas,16.50,Introducción a la Bioinformática,3,0,72.37
+Ingeniería en Informática,Electivas,16.57,Robótica Bioinspirada,3,0,72.08
+Ingeniería en Informática,Electivas,16.82,Neurociencia Computacional,3,0,93.28|72.34|93.24
+Ingeniería en Informática,Electivas,16.95,Startups basadas en ciencia,1,144,
+Ingeniería en Informática,Electivas,22.09,Fundamentos Electrónicos de la Informática,6,0,
+Ingeniería en Informática,Electivas,22.48,Procesamiento de Imágenes,3,0,93.75
+Ingeniería en Informática,Electivas,23.15,Realidad Virtual,3,0,93.58|72.34
+Ingeniería en Informática,Electivas,25.04,Computación Cuántica,6,144,
+Ingeniería en Informática,Electivas,48.02,AI: Data Management Course & Digital Transformation,1,0,
+Ingeniería en Informática,Electivas,61.08,Derecho Digital,1,0,61.32
+Ingeniería en Informática,Electivas,61.11,Derecho Laboral y Seguridad Social en la Empresa,1,0,61.32
+Ingeniería en Informática,Electivas,61.13,Práctica Contractual,1,0,61.32
+Ingeniería en Informática,Electivas,61.16,Introducción a las Finanzas,3,0,61.23
+Ingeniería en Informática,Electivas,61.50,Finanzas de la Empresa,3,0,61.23
+Ingeniería en Informática,Electivas,68.99,Introducción a la Ciencia de Ciudades,1,144,
+Ingeniería en Informática,Electivas,71.48,Introducción a la realidad aumentada,1,51,
+Ingeniería en Informática,Electivas,72.02,Organización Básica de la Computadora,6,0,
+Ingeniería en Informática,Electivas,72.18,Programación Funcional,4,0,
+Ingeniería en Informática,Electivas,72.22,Sistemas Tolerantes a Fallas,6,0,
+Ingeniería en Informática,Electivas,72.23,Diseño y Construcción de Compiladores,1,0,
+Ingeniería en Informática,Electivas,72.28,Topología de Internet: Análisis y Modelado,3,0,
+Ingeniería en Informática,Electivas,72.29,Tipos para Lenguajes de Programación,3,0,72.34
+Ingeniería en Informática,Electivas,72.46,Robótica Basada en Comportamiento,6,0,72.27
+Ingeniería en Informática,Electivas,72.49,Sistemas Tolerantes a Fallas,3,0,72.42
+Ingeniería en Informática,Electivas,72.50,Introducción al Desarrollo de Videojuegos,6,0,72.34
+Ingeniería en Informática,Electivas,72.51,Tecnologías para Web 2.0 y Redes Sociales,3,0,72.42
+Ingeniería en Informática,Electivas,72.52,Análisis y Tratamiento de Imágenes,3,0,93.75|72.34
+Ingeniería en Informática,Electivas,72.53,Visión Computacional 3D,3,0,72.34
+Ingeniería en Informática,Electivas,72.54,OLAP y Explotación de Datos,3,0,93.24|72.41
+Ingeniería en Informática,Electivas,72.55,Ontologías en la Web,3,0,72.32|72.37
+Ingeniería en Informática,Electivas,72.56,Automatización e Integración de Sistemas de Información,6,0,
+Ingeniería en Informática,Electivas,72.57,Sistemas Embebidos,3,0,
+Ingeniería en Informática,Electivas,72.58,Computación Gráfica,3,0,72.34
+Ingeniería en Informática,Electivas,72.59,Sistemas de Inteligencia Artificial II,3,0,72.27
+Ingeniería en Informática,Electivas,72.60,Programación Funcional,3,0,72.34
+Ingeniería en Informática,Electivas,72.61,Taller de Diseño de Videojuegos,1,0,72.34
+Ingeniería en Informática,Electivas,72.64,Cloud Computing,3,0,72.32
+Ingeniería en Informática,Electivas,72.65,Desarrollo de Videojuegos 2D en iPhone OS,3,0,72.34
+Ingeniería en Informática,Electivas,72.66,Sistemas Embebidos,6,0,
+Ingeniería en Informática,Electivas,72.67,Robótica Cinemática Computacional,3,0,
+Ingeniería en Informática,Electivas,72.68,Arte y Ciencia Interactivos,3,0,
+Ingeniería en Informática,Electivas,72.69,Seguridad de Software basada en Flujo de Información,6,0,
+Ingeniería en Informática,Electivas,72.70,Modelos e Imágenes Fractales,1,0,
+Ingeniería en Informática,Electivas,72.71,Integración de Sistemas de Información,3,0,72.07|72.37|72.35
+Ingeniería en Informática,Electivas,72.72,Análisis y Verificación de Modelos y Códigos,3,0,
+Ingeniería en Informática,Electivas,72.73,Aprendizaje por Refuerzo en Robótica,3,0,
+Ingeniería en Informática,Electivas,72.74,Visualización de Información,3,0,72.31
+Ingeniería en Informática,Electivas,72.75,Aprendizaje Automático (Machine Learning),3,0,93.75|72.34|93.24
+Ingeniería en Informática,Electivas,72.77,Técnicas Automáticas para Testing de Software,3,0,
+Ingeniería en Informática,Electivas,72.78,OLAP Espacial,3,0,
+Ingeniería en Informática,Electivas,72.79,Sistemas Multiagente I,3,0,72.27
+Ingeniería en Informática,Electivas,72.80,Big Data,3,0,72.41
+Ingeniería en Informática,Electivas,72.81,Simulación y Animación de Sistemas Multipartículas,3,0,
+Ingeniería en Informática,Electivas,72.82,Tópicos de NOSQL,3,0,72.41
+Ingeniería en Informática,Electivas,72.83,Técnicas Avanzadas de HCI con Uso de Rastreadores de Ojos y Manos,3,0,
+Ingeniería en Informática,Electivas,72.84,Base de Datos Espaciales y Sistemas de Información Geográfica,3,0,72.37
+Ingeniería en Informática,Electivas,72.85,Análisis de Datos en la Web Semántica,3,0,72.32|72.37
+Ingeniería en Informática,Electivas,72.86,Técnicas Avanzadas en Videojuegos,3,0,72.97
+Ingeniería en Informática,Electivas,72.87,Diseño Sonoro para Animación y Videojuegos,3,0,72.34
+Ingeniería en Informática,Electivas,72.88,Introducción a la Neurociencia Computacional,3,0,93.75|93.24|72.34
+Ingeniería en Informática,Electivas,72.89,Moneda Digital Descentralizada,3,0,72.44
+Ingeniería en Informática,Electivas,72.90,Internet de las Cosas (IoT),3,0,93.07|93.43
+Ingeniería en Informática,Electivas,72.92,El Paradigma NoSQL - Bases de Datos de Grafos,3,0,72.41
+Ingeniería en Informática,Electivas,72.94,Introducción a los Sistemas Embebidos,3,0,72.08
+Ingeniería en Informática,Electivas,72.95,Proyecto de Innovación Científico-Tecnológico,12,0,
+Ingeniería en Informática,Electivas,72.96,Proyecto de Aplicaciones Móviles,3,0,72.38
+Ingeniería en Informática,Electivas,72.97,Introducción a la Programación de Videojuegos,3,0,72.34
+Ingeniería en Informática,Electivas,73.21,Desarrollo de Aplicaciones Móviles Multiplataforma,3,0,72.38
+Ingeniería en Informática,Electivas,73.22,Fundamentos de DevOps,3,0,72.35
+Ingeniería en Informática,Electivas,73.23,Programación Orientada a Datos,1,0,72.34
+Ingeniería en Informática,Electivas,73.30,Desarrollo profesional de software: del código al producto,3,0,72.38
+Ingeniería en Informática,Electivas,73.40,ARQUITECTURA DE MICROSERVICIOS,3,0,72.07|72.35
+Ingeniería en Informática,Electivas,73.50,"Infraestructura de Cómputo: Data Center, Cloud y Edge",3,0,72.20|72.41
+Ingeniería en Informática,Electivas,73.60,Introducción a la Robótica Empresarial,1,0,
+Ingeniería en Informática,Electivas,73.61,Neurorobótica,1,0,
+Ingeniería en Informática,Electivas,73.62,Introducción a la Programación Paralela,1,0,72.33|72.11
+Ingeniería en Informática,Electivas,73.63,Redes Equivariantes,1,0,72.27
+Ingeniería en Informática,Electivas,73.64,Temas Avanzados en Deep Learning,2,0,72.27
+Ingeniería en Informática,Electivas,73.65,Procesamiento del Lenguaje Natural,3,0,93.07
+Ingeniería en Informática,Electivas,73.66,Procesamiento de Imágenes Satelitales,1,0,
+Ingeniería en Informática,Electivas,73.67,Análisis de series de tiempo con Inteligencia Artificial,1,0,72.27
+Ingeniería en Informática,Electivas,73.68,Tecnologías Emergentes para Aprendizaje Automático e Inteligencia Artificial,1,0,72.27
+Ingeniería en Informática,Electivas,73.69,Large Language Models,3,0,
+Ingeniería en Informática,Electivas,73.70,Análisis de datos en neurociencias,3,144,
+Ingeniería en Informática,Electivas,73.80,SEGURIDAD OFENSIVA,1,0,72.44
+Ingeniería en Informática,Electivas,73.81,Ciberseguridad Ofensiva y Defensiva,3,0,72.44
+Ingeniería en Informática,Electivas,73.82,Bases de Datos Espaciales y de Movilidad,3,0,72.37
+Ingeniería en Informática,Electivas,73.83,Gestión estratégica de la Ciberseguridad,1,0,72.44
+Ingeniería en Informática,Electivas,73.84,Ciencia de Datos Aplicada,3,0,72.27
+Ingeniería en Informática,Electivas,73.89,Introducción a Blockchain y Criptomonedas,3,0,72.44
+Ingeniería en Informática,Electivas,73.98,Desarrollo Integral de Videojuegos,3,0,72.97
+Ingeniería en Informática,Electivas,74.60,Visión por Computadora (Computer Vision),3,144,
+Ingeniería en Informática,Electivas,81.13,Futuros Posibles,1,0,
+Ingeniería en Informática,Electivas,81.14,Product Management,3,0,
+Ingeniería en Informática,Electivas,81.16,Negociación,1,0,
+Ingeniería en Informática,Electivas,81.57,Arquitectura de soluciones digitales,3,0,72.07|72.37|72.35
+Ingeniería en Informática,Electivas,81.74,Introducción a la realidad aumentada,1,51,
+Ingeniería en Informática,Electivas,81.76,Tecnologías para las Finanzas,3,144,
+Ingeniería en Informática,Electivas,81.94,Experiencia Inmersiva de Innovación Tecnológica,1,0,
+Ingeniería en Informática,Electivas,82.08,Cloud Computing,3,0,72.32
+Ingeniería en Informática,Electivas,82.18,Procesamiento del Lenguaje Natural,3,0,93.07
+Ingeniería en Informática,Electivas,82.21,Factibilidad de Proyectos Data Driven,3,0,61.23
+Ingeniería en Informática,Electivas,94.26,Comunicación Organizacional,3,0,
+Ingeniería en Informática,Electivas,94.42,Comunicación Estratégica,3,0,
+Ingeniería en Informática,Electivas,94.62,Ética en los Negocios,3,0,
+Ingeniería en Informática,Electivas,94.64,Prácticas Expositivas,3,120,
+Ingeniería en Informática,Electivas,94.65,Practica Profesional supervisada,0,144,
+Ingeniería en Informática,Electivas,94.92,Escritura Académica,3,0,
+Ingeniería Industrial,Año 1 - Cuatrimestre 1,12.67,Química General,6,0,
+Ingeniería Industrial,Año 1 - Cuatrimestre 1,71.20,Informática General,3,0,
+Ingeniería Industrial,Año 1 - Cuatrimestre 1,92.01,Análisis Matemático I,6,0,
+Ingeniería Industrial,Año 1 - Cuatrimestre 1,93.18,Álgebra Lineal,6,0,
+Ingeniería Industrial,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,0,
+Ingeniería Industrial,Año 1 - Cuatrimestre 2,16.55,Biología,3,0,
+Ingeniería Industrial,Año 1 - Cuatrimestre 2,31.08,Sistemas de Representación,3,0,
+Ingeniería Industrial,Año 1 - Cuatrimestre 2,92.02,Análisis Matemático II,6,0,92.01|93.18
+Ingeniería Industrial,Año 1 - Cuatrimestre 2,93.41,Física I,6,0,92.01
+Ingeniería Industrial,Año 1 - Cuatrimestre 2,REVISAR,Gestión de Datos,6,,
+Ingeniería Industrial,Año 2 - Cuatrimestre 1,30.89,Mecánica de Sólidos,3,0,93.41
+Ingeniería Industrial,Año 2 - Cuatrimestre 1,92.03,Análisis Matemático III,6,0,92.01|93.18
+Ingeniería Industrial,Año 2 - Cuatrimestre 1,93.36,Probabilidad,3,0,92.02
+Ingeniería Industrial,Año 2 - Cuatrimestre 1,93.42,Física II,6,0,92.02
+Ingeniería Industrial,Año 2 - Cuatrimestre 2,11.28,Sistemas Complejos,3,0,
+Ingeniería Industrial,Año 2 - Cuatrimestre 2,11.67,Estadística Aplicada,6,0,93.36
+Ingeniería Industrial,Año 2 - Cuatrimestre 2,31.24,Mecánica de Fluidos,3,0,92.03|93.41
+Ingeniería Industrial,Año 2 - Cuatrimestre 2,92.05,Análisis Matemático IV,4,0,92.03
+Ingeniería Industrial,Año 2 - Cuatrimestre 2,93.07,Métodos Numéricos,3,0,92.03
+Ingeniería Industrial,Año 2 - Cuatrimestre 2,93.43,Física III,6,0,92.03
+Ingeniería Industrial,Año 3 - Cuatrimestre 1,11.10,Organización de la Producción I,6,0,
+Ingeniería Industrial,Año 3 - Cuatrimestre 1,11.16,Materiales y Procesos,6,0,30.89
+Ingeniería Industrial,Año 3 - Cuatrimestre 1,21.30,Principios y Aplicaciones Eléctricas,5,0,93.43
+Ingeniería Industrial,Año 3 - Cuatrimestre 1,93.61,Física IV,4,0,93.43
+Ingeniería Industrial,Año 3 - Cuatrimestre 1,94.43,Metodología del Diseño,3,72,
+Ingeniería Industrial,Año 3 - Cuatrimestre 2,11.20,Supply Chain,6,0,11.10
+Ingeniería Industrial,Año 3 - Cuatrimestre 2,11.51,Investigación Operativa,6,0,11.67
+Ingeniería Industrial,Año 3 - Cuatrimestre 2,30.32,Termodinámica y sus aplicaciones,6,0,93.42
+Ingeniería Industrial,Año 3 - Cuatrimestre 2,94.44,Proyecto Interdisciplinario,3,0,94.43
+Ingeniería Industrial,Año 4 - Cuatrimestre 1,11.75,Tecnologías y Procesos de Producción,3,0,11.16
+Ingeniería Industrial,Año 4 - Cuatrimestre 1,23.17,Electrónica e Instrumentación,3,0,
+Ingeniería Industrial,Año 4 - Cuatrimestre 1,61.09,Economía Empresaria,6,0,11.10
+Ingeniería Industrial,Año 4 - Cuatrimestre 1,71.90,Certificaciones tecnológicas,0,0,
+Ingeniería Industrial,Año 4 - Cuatrimestre 1,94.51,Inglés I,0,0,
+Ingeniería Industrial,Año 4 - Cuatrimestre 2,10.02,Gestión Ambiental,3,0,11.75
+Ingeniería Industrial,Año 4 - Cuatrimestre 2,11.63,Simulación,3,0,11.51
+Ingeniería Industrial,Año 4 - Cuatrimestre 2,61.28,Economía,6,0,61.09
+Ingeniería Industrial,Año 4 - Cuatrimestre 2,61.31,Derecho para Ingenieros,3,0,
+Ingeniería Industrial,Año 5 - Cuatrimestre 1,10.01,Proyecto Final de Ingeniería Industrial (Anual),6,0,94.44|11.51|61.09|11.20
+Ingeniería Industrial,Año 5 - Cuatrimestre 2,94.52,Inglés II,0,0,94.51
+Ingeniería Industrial,Año 5 - Cuatrimestre 2,94.65,Practica Profesional supervisada,0,144,
+Ingeniería Industrial,Bloque I Electivas,71.45,Estructura de Datos y Programación,6,0,71.20
+Ingeniería Industrial,Bloque II Electivas General,10.07,Creatividad,3,72,
+Ingeniería Industrial,Bloque II Electivas General,10.09,Formación para Emprendedores,3,72,
+Ingeniería Industrial,Bloque II Electivas General,10.15,Agroindustria,3,72,
+Ingeniería Industrial,Bloque II Electivas General,10.16,Machine Learning para Negocios,3,72,92.03|93.36
+Ingeniería Industrial,Bloque II Electivas General,10.21,Herramientas Avanzadas de la Calidad,3,72,11.67
+Ingeniería Industrial,Bloque II Electivas General,10.22,Machine Learning Avanzada,3,72,10.16
+Ingeniería Industrial,Bloque II Electivas General,10.23,Agroindustria II,3,145,
+Ingeniería Industrial,Bloque II Electivas General,11.39,Marketing,3,72,
+Ingeniería Industrial,Bloque II Electivas General,11.59,Logística,3,72,11.20
+Ingeniería Industrial,Bloque II Electivas General,11.76,Gestión de Calidad,3,72,
+Ingeniería Industrial,Bloque II Electivas General,11.84,Gestión de Proyectos,3,72,
+Ingeniería Industrial,Bloque II Electivas General,11.91,Metodología de la Investigación,3,0,
+Ingeniería Industrial,Bloque II Electivas General,14.03,Gestión de la Innovación,1,72,
+Ingeniería Industrial,Bloque II Electivas General,14.14,Introducción a la Consultoría,1,0,
+Ingeniería Industrial,Bloque II Electivas General,14.37,Análisis de Encuestas,1,72,
+Ingeniería Industrial,Bloque II Electivas General,14.40,Ingeniería y Cambio Climático,1,0,
+Ingeniería Industrial,Bloque II Electivas General,14.46,Lean Manufacturing,1,72,
+Ingeniería Industrial,Bloque II Electivas General,14.59,Lean Six Sigma White Belt,1,72,
+Ingeniería Industrial,Bloque II Electivas General,14.67,Bem1105x Pricing Options with Mathematical Models,1,72,
+Ingeniería Industrial,Bloque II Electivas General,14.72,Analytics,1,72,
+Ingeniería Industrial,Bloque II Electivas General,14.77,Diseño de Producto,1,0,
+Ingeniería Industrial,Bloque II Electivas General,14.97,Diseño Circular: Sustentabilidad e Innovación en la Cadena de Valor.,1,0,
+Ingeniería Industrial,Bloque II Electivas General,14.99,Electric Cars Technology,1,0,
+Ingeniería Industrial,Bloque II Electivas General,15.06,Storytelling aplicado a los negocios,1,0,
+Ingeniería Industrial,Bloque II Electivas General,15.07,Conceptos de Minería para Ing. Industriales,1,72,
+Ingeniería Industrial,Bloque II Electivas General,15.11,Aplicaciones avanzadas de estadística,1,0,11.67
+Ingeniería Industrial,Bloque II Electivas General,15.12,Análisis Estratégico del Mercado,1,72,
+Ingeniería Industrial,Bloque II Electivas General,15.13,Innovación en materiales Biobasados,1,72,
+Ingeniería Industrial,Bloque II Electivas General,15.14,Proyecto I,3,0,
+Ingeniería Industrial,Bloque II Electivas General,15.16,Supply Chain leadership,1,0,11.20
+Ingeniería Industrial,Bloque II Electivas General,15.61,Mecánica de Fluidos Computacional,3,0,
+Ingeniería Industrial,Bloque II Electivas General,15.62,Ciclos reales en motores de combustión interna,3,0,
+Ingeniería Industrial,Bloque II Electivas General,15.63,Deformación y fractura de materiales,3,0,
+Ingeniería Industrial,Bloque II Electivas General,15.69,Factibilidad de proyectos Data Driven,3,145,
+Ingeniería Industrial,Bloque II Electivas General,15.70,Service Design,3,72,
+Ingeniería Industrial,Bloque II Electivas General,15.71,Introducción a la realidad virtual,1,72,
+Ingeniería Industrial,Bloque II Electivas General,15.72,Growth Hacking,1,72,
+Ingeniería Industrial,Bloque II Electivas General,15.75,Filosofía,3,72,
+Ingeniería Industrial,Bloque II Electivas General,15.76,Prácticas Expositivas,3,72,
+Ingeniería Industrial,Bloque II Electivas General,15.77,Química Inorgánica,6,0,
+Ingeniería Industrial,Bloque II Electivas General,15.80,Seminario Internacional I,3,72,
+Ingeniería Industrial,Bloque II Electivas General,15.81,Seminario Internacional II,3,72,
+Ingeniería Industrial,Bloque II Electivas General,15.82,Seminario Internacional III,1,72,
+Ingeniería Industrial,Bloque II Electivas General,15.83,Seminario Internacional IV,2,72,
+Ingeniería Industrial,Bloque II Electivas General,15.84,Gestión de la Operación Diaria a través de DMS y KPIs Estratégicos,1,72,
+Ingeniería Industrial,Bloque II Electivas General,15.85,Logística Internacional,3,0,11.10
+Ingeniería Industrial,Bloque II Electivas General,15.86,Analítica para la Cadena de Suministro,2,0,11.20
+Ingeniería Industrial,Bloque II Electivas General,15.87,Simulación para la Cadena de Suministro,2,0,11.20
+Ingeniería Industrial,Bloque II Electivas General,15.89,Mejora continua de procesos,3,0,11.67|11.10
+Ingeniería Industrial,Bloque II Electivas General,16.04,Neurociencias y Desarrollo Productivo,3,72,
+Ingeniería Industrial,Bloque II Electivas General,21.44,Instalaciones Eléctricas,3,0,
+Ingeniería Industrial,Bloque II Electivas General,23.15,Realidad Virtual,3,0,71.45|71.20
+Ingeniería Industrial,Bloque II Electivas General,31.67,Procesos de Manufactura I,3,0,
+Ingeniería Industrial,Bloque II Electivas General,47.73,Operaciones Offshore - Petróleo y LNG,3,72,
+Ingeniería Industrial,Bloque II Electivas General,48.02,AI: Data Management Course & Digital Transformation,1,0,
+Ingeniería Industrial,Bloque II Electivas General,48.04,"El Gas Natural Licuado - Tecnología, Mercados y Negocios",3,0,61.28
+Ingeniería Industrial,Bloque II Electivas General,48.05,La Cadena de valor del Gas Natural,3,0,61.28
+Ingeniería Industrial,Bloque II Electivas General,61.11,Derecho Laboral y Seguridad Social en la Empresa,1,0,61.31
+Ingeniería Industrial,Bloque II Electivas General,61.34,Valuación de Empresas,1,0,61.50
+Ingeniería Industrial,Bloque II Electivas General,71.22,Sistemas de Inteligencia Artificial,3,72,
+Ingeniería Industrial,Bloque II Electivas General,81.04,Teoría de Juegos y Estrategia,3,72,
+Ingeniería Industrial,Bloque II Electivas General,81.21,Gestión de Ventas,3,72,
+Ingeniería Industrial,Bloque II Electivas General,81.51,Gestión de Empresas Familiares,3,72,
+Ingeniería Industrial,Bloque II Electivas General,81.53,Negocios en Internet,3,72,
+Ingeniería Industrial,Bloque II Electivas General,81.59,Gestión de Servicios,3,72,
+Ingeniería Industrial,Bloque II Electivas General,81.65,Logística Internacional,3,72,11.20
+Ingeniería Industrial,Bloque II Electivas General,81.73,Introducción a la IOT,1,72,
+Ingeniería Industrial,Bloque II Electivas General,81.74,Introducción a la realidad aumentada,1,72,
+Ingeniería Industrial,Bloque II Electivas General,81.94,Experiencia Inmersiva de Innovación Tecnológica,1,0,
+Ingeniería Industrial,Bloque II Electivas General,82.07,Blockchain (Moneda digital descentralizada),3,72,
+Ingeniería Industrial,Bloque II Electivas General,82.08,Cloud Computing,3,72,
+Ingeniería Industrial,Bloque II Electivas General,82.17,Análisis Multivariado,3,96,11.67
+Ingeniería Industrial,Bloque II Electivas General,92.99,Complementos de Análisis Matemático IV,2,0,
+Ingeniería Industrial,Bloque II Electivas General,94.13,Gestión de Organizaciones Sociales,6,72,
+Ingeniería Industrial,Bloque II Electivas General,94.19,Comportamiento Organizacional,3,72,94.33
+Ingeniería Industrial,Bloque II Electivas General,94.27,Administración de Recursos Humanos,3,72,
+Ingeniería Industrial,Bloque II Electivas General,94.40,Estructura de las Organizaciones,3,0,
+Ingeniería Industrial,Bloque II Electivas General,94.42,Comunicación Estratégica,3,72,
+Ingeniería Industrial,Bloque III Electivas Gestión,11.46,Planeamiento Estratégico,3,72,
+Ingeniería Industrial,Bloque III Electivas Gestión,11.73,Teoría de la Decisión,3,72,
+Ingeniería Industrial,Bloque IV Electivas Tics,15.65,Derecho digital,1,72,
+Ingeniería Industrial,Bloque IV Electivas Tics,15.67,Programación web,3,72,
+Ingeniería Industrial,Bloque IV Electivas Tics,15.68,Programación Básica,3,0,
+Ingeniería Industrial,Bloque IV Electivas Tics,81.03,Sistemas de Información,3,72,
+Ingeniería Industrial,Bloque V Electivas Energía,10.08,Energías Renovables,3,72,
+Ingeniería Industrial,Bloque V Electivas Energía,10.12,Energías Convencionales,3,72,
+Ingeniería Industrial,Bloque V Electivas Energía,10.18,Demanda Energética,2,72,
+Ingeniería Industrial,Bloque V Electivas Energía,10.19,Tecnologías Energéticas Disruptivas,2,72,
+Ingeniería Industrial,Bloque V Electivas Energía,10.20,Introducción al Desarrollo Energético Sustentable,2,72,
+Ingeniería Industrial,Bloque V Electivas Energía,10.24,Economía de la Transición Energética,3,72,
+Ingeniería Industrial,Bloque V Electivas Energía,14.52,Eficiencia Energética,1,0,
+Ingeniería Industrial,Bloque V Electivas Energía,15.15,Tecnologías del Hidrógeno,1,72,
+Ingeniería Industrial,Bloque V Electivas Energía,34.98,Baterías y Acumulación de Energía,1,0,30.32|12.67|23.17
+Ingeniería Industrial,Bloque V Electivas Energía,47.86,Transición Energética y Sustentabilidad,3,96,
+Ingeniería Industrial,Bloque VI Electivas Finanzas,15.64,Sistema Monetario y Financiero en Argentina,3,72,
+Ingeniería Industrial,Bloque VI Electivas Finanzas,61.30,Econometría Aplicada,3,72,11.67
+Ingeniería Industrial,Bloque VI Electivas Finanzas,61.50,Finanzas de la Empresa,3,72,
+Ingeniería Industrial,Bloque VI Electivas Finanzas,61.93,Estrategia Financiera,3,0,61.09
+Ingeniería Industrial,Bloque VII Electivas Tecnología,10.04,Plantas Industriales,3,72,
+Ingeniería Industrial,Bloque VII Electivas Tecnología,11.14,Diseño de Producto,3,72,11.16
+Ingeniería Industrial,Bloque VII Electivas Tecnología,11.19,Prototipado e Impresión 3D,3,72,
+Ingeniería Industrial,Bloque VII Electivas Tecnología,11.33,Gestión de la tecnología,3,160,
+Ingeniería Industrial,Gestión de datos,71.78,Gestión de Datos,6,0,71.20
+Ingeniería Industrial,Gestión de datos,71.88,Gestión de Datos,6,REVISAR,71.20
+Ingeniería Mecánica,Año 1 - Cuatrimestre 1,12.67,Química General,6,0,
+Ingeniería Mecánica,Año 1 - Cuatrimestre 1,71.58,Informática General,3,0,
+Ingeniería Mecánica,Año 1 - Cuatrimestre 1,92.01,Análisis Matemático I,6,0,
+Ingeniería Mecánica,Año 1 - Cuatrimestre 1,93.18,Álgebra Lineal,6,0,
+Ingeniería Mecánica,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,0,
+Ingeniería Mecánica,Año 1 - Cuatrimestre 2,16.55,Biología,3,0,
+Ingeniería Mecánica,Año 1 - Cuatrimestre 2,30.26,Ciencia de Materiales I,6,0,12.67
+Ingeniería Mecánica,Año 1 - Cuatrimestre 2,30.51,Introducción a la Ingeniería Mecánica,3,0,
+Ingeniería Mecánica,Año 1 - Cuatrimestre 2,31.08,Sistemas de Representación,3,0,
+Ingeniería Mecánica,Año 1 - Cuatrimestre 2,71.90,Certificaciones tecnológicas,0,0,
+Ingeniería Mecánica,Año 1 - Cuatrimestre 2,92.02,Análisis Matemático II,6,0,92.01|93.18
+Ingeniería Mecánica,Año 1 - Cuatrimestre 2,93.41,Física I,6,0,92.01
+Ingeniería Mecánica,Año 2 - Cuatrimestre 1,30.41,Diseño Mecánico I,6,0,93.41|30.26|31.08
+Ingeniería Mecánica,Año 2 - Cuatrimestre 1,30.46,Laboratorio de Diseño Mecánico,3,0,93.41|31.08|30.26
+Ingeniería Mecánica,Año 2 - Cuatrimestre 1,71.59,Estructura de Datos y Programación,6,0,71.58|71.90
+Ingeniería Mecánica,Año 2 - Cuatrimestre 1,92.03,Análisis Matemático III,6,0,92.01|93.18
+Ingeniería Mecánica,Año 2 - Cuatrimestre 1,93.42,Física II,6,0,92.02
+Ingeniería Mecánica,Año 2 - Cuatrimestre 2,30.42,Diseño Mecánico II,6,0,92.02|92.03|93.41
+Ingeniería Mecánica,Año 2 - Cuatrimestre 2,31.21,Termodinámica,6,0,93.42|93.41
+Ingeniería Mecánica,Año 2 - Cuatrimestre 2,92.04,Análisis Matemàtico IV,6,0,92.02|92.03
+Ingeniería Mecánica,Año 2 - Cuatrimestre 2,93.07,Métodos Numéricos,3,0,71.58|92.03
+Ingeniería Mecánica,Año 2 - Cuatrimestre 2,93.43,Física III,6,0,92.03|93.41
+Ingeniería Mecánica,Año 3 - Cuatrimestre 1,21.08,Electrotecnia,6,0,93.43
+Ingeniería Mecánica,Año 3 - Cuatrimestre 1,30.25,Ciencia de Materiales II,3,0,30.26
+Ingeniería Mecánica,Año 3 - Cuatrimestre 1,30.43,Diseño Mecánico III A,4,0,30.42|92.03|93.07|92.04
+Ingeniería Mecánica,Año 3 - Cuatrimestre 1,30.44,Diseño Mecánico III B,4,0,92.03|30.42|93.07|92.04
+Ingeniería Mecánica,Año 3 - Cuatrimestre 1,93.61,Física IV,4,0,93.42|93.43
+Ingeniería Mecánica,Año 3 - Cuatrimestre 1,94.43,Metodología del Diseño,3,72,
+Ingeniería Mecánica,Año 3 - Cuatrimestre 2,30.45,Diseño Mecánico IV,6,0,30.41|30.43|30.25|30.44
+Ingeniería Mecánica,Año 3 - Cuatrimestre 2,30.47,Termofluidos I,6,0,31.21|92.03|93.42|93.41
+Ingeniería Mecánica,Año 3 - Cuatrimestre 2,93.24,Probabilidad y Estadística,6,0,92.02
+Ingeniería Mecánica,Año 3 - Cuatrimestre 2,94.44,Proyecto Interdisciplinario,3,0,94.43
+Ingeniería Mecánica,Año 3 - Cuatrimestre 2,94.51,Inglés I,0,0,
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,10.09,Formación para Emprendedores,3,72,
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,11.73,Teoría de la Decisión,3,72,
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,61.50,Finanzas de la Empresa,3,72,
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,94.19,Comportamiento Organizacional,3,0,11.15
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,94.27,Administración de Recursos Humanos,3,72,
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,94.40,Estructura de las Organizaciones,3,0,11.15
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,94.42,Comunicación Estratégica,3,72,
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,94.61,Filosofía,3,72,
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,94.62,Ética en los Negocios,3,72,
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,94.63,Epistemología y Heurística,3,72,
+Ingeniería Mecánica,ELECTIVAS - Área Complementaria,94.64,Prácticas Expositivas,3,72,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,11.15,Organización Industrial,3,0,93.24
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,23.18,Electrónica e Instrumentación,6,0,92.04|21.08
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.09,Motores de Combustión Interna,6,0,31.21
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.19,Introducción a la Dinámica del Autómovil,3,0,30.43
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.20,Dinámica del Autómovil Avanzada,3,0,30.19
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.21,Ciclos Reales en Motores de Combustión Interna,3,0,30.09
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.23,Mantenimiento Industrial,3,0,30.43|30.46|30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.40,Sistemas Mecatrónicos del Autómovil,4,0,30.49|23.16|23.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.48,Termofluidos II,3,0,93.07|30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.49,Máquinas Térmicas e Hidráulicas,6,0,30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.80,Proyecto Final (Anual),6,192,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.68,Instalaciones Industriales,6,0,30.44|30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.84,Estructuras Automotrices,3,0,30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.85,Transmisiones Automotrices,3,0,30.49|30.45
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,61.16,Introducción a las Finanzas,3,0,11.15|61.27
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,61.27,Análisis de Coyuntura Económica,3,0,93.24
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,61.31,Derecho para Ingenieros,3,144,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,12.83,Seguridad Ocupacional y Ambiental,3,0,30.41|30.42
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,23.16,Sistemas de Control,3,0,92.04
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.22,Proceso de Combustión en Motores de Combustión Interna,3,0,30.21
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,94.52,Inglés II,0,0,94.51
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,94.65,Practica Profesional supervisada,0,144,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,10.08,Energías Renovables,3,144,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,10.12,Energías Convencionales,3,144,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,10.24,Economía de la Transición Energética,3,144,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,11.19,Prototipado e Impresión 3D,3,72,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,12.46,Introducción al Proceso de Fabricación de Aceros,3,0,31.21|30.25
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,12.94,Introducción a la Ingeniería Nuclear,3,0,31.21
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,16.02,Histología y Anatomía,6,0,16.55
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,16.03,Fisiología,6,0,16.55
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,16.06,Señales y Sistemas,3,0,92.04
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,16.64,Mecánica de biomateriales y tejidos,8,0,93.41|16.03
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,16.79,Neurociencias,3,0,94.43|16.03
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,16.82,Neurociencia Computacional,3,0,71.59|92.03|93.24
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,21.41,Instalaciones Eléctricas,6,0,21.08
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,21.73,Energías Alternativas,6,0,30.49|21.08
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,22.48,Procesamiento de Imágenes,3,168,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,22.56,Sensores y Actuadores,3,0,23.16|23.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,22.57,Microprocesadores y Control,6,0,23.16|23.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,22.90,Automación Industrial,6,0,23.16|23.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,22.94,Control Discreto,6,0,22.57
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,23.07,Electrónica Industrial,3,0,23.16|23.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,23.19,Complementos de Instrumentación y Control,3,0,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,25.62,Electrónica Aeroespacial,3,0,23.16|23.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.12,Diseño Mecánico Avanzado,6,0,30.48|23.16|23.18|30.45
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.14,Mecánica de Fluidos Computacional,3,0,30.48
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.15,Tecnologías para Energías Renovables,3,0,30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.30,Transporte Sustentable A,3,0,30.49|21.08
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.31,Transporte Sustentable B,6,0,30.49|21.08
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.35,Gestión de Proyectos Mecánicos,3,168,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.50,Mecánica del Continuo,3,0,30.42
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.52,Mecánica Aplicada,6,0,92.02|92.03|93.41
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.53,Mecánica de Sólidos Computacional,4,0,93.07|30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.54,Mecánica de Sólidos Computacional Avanzada,3,0,30.53
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.63,Cadenas de Valor Circulares,3,144,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.64,Bioenergía,2,0,31.21|16.55
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.65,Energía Eólica,2,0,30.48
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.66,Energía Geotérmica,2,0,31.21|30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.67,Energía Hidráulica,2,0,30.48
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.68,Energía Solar,2,0,30.43
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,30.69,Tecnologías del Hidrógeno,2,0,31.21|30.49|30.25
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.30,Materiales Poliméricos,3,0,30.25
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.65,Procesos de Manufactura II,3,0,30.25|30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.66,"Hidráulica, Neumática y PLC",3,0,30.43|23.16|23.18|30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.67,Procesos de Manufactura I,3,0,30.25|30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.73,Aire Acondicionado y Refrigeración,6,0,31.21|30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.82,Sistemas Mecatrónicos,3,0,22.57
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.90,Integridad Estructural,3,0,30.25|30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.94,Tecnología de Materiales Compuestos,3,0,30.25|30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.95,Física y Mecánica de Aceros,3,0,30.24
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.96,Deformación y Fractura de Materiales,3,0,30.25|30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.97,Corrosión y Degradación de Materiales,3,0,30.25|30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,31.98,Laboratorio Avanzado de Materiales,3,0,30.25
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,32.49,Estructura de Buques,6,0,30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,32.54,Construcción Naval,6,0,30.44|32.66
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,32.56,Alistamiento Naval,6,0,31.21|32.66|30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,32.66,Hidrostática y Estabilidad,6,0,92.03|93.41|31.08
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,32.69,Resistencia y Propulsión,6,0,32.66
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,33.04,Astrodinámica y misiones espaciales,3,0,92.02|93.42
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,33.05,Aerodinámica,6,0,30.47
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,33.06,Estructuras aeroespaciales,6,0,30.44
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,33.12,Sistemas de Propulsión II,6,0,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,33.13,"Guiado, Navegación y Control",6,0,23.16|23.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,33.14,Sistemas de control térmico,3,0,31.21|33.04
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,34.98,Baterías y Acumulación de Energía,1,0,31.21|12.67|23.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,34.99,"Energía Solar Fotovoltaica, aplicaciones terrestres y espaciales",1,0,23.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,72.31,Programación Imperativa,9,0,71.58|93.18
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,72.33,Programación Orientada a Objetos,6,0,72.31
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,92.90,Complementos de Matemática,3,0,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,92.91,Complementos de Física,2,0,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,92.92,Complementos de Física de la Relatividad,2,0,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,92.93,Complementos de Química,1,0,
+Ingeniería Mecánica,Concentración - AUTOMOTRIZ,93.75,Métodos Numéricos Avanzados,6,0,93.07
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 1,19.01,Fundamentos del comportamiento humano,6,0,
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 1,19.02,Filosofía de la mente,3,0,
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 1,93.20,Análisis Matemático,6,0,
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 1,93.21,Álgebra,6,0,
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,0,
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 2,19.03,Psicología cognitiva,6,0,19.01|19.02
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 2,19.04,Neurofisiología y Neuroanatomía,6,0,
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 2,71.20,Informática General,3,0,
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 2,71.90,Certificaciones tecnológicas,0,0,
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 2,92.10,Matemática Aplicada,6,0,93.20|93.21
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 2,94.34,Economía y Sociedad,3,0,94.33
+Licenciatura en Ciencias del Comportamiento,Año 1 - Cuatrimestre 2,94.51,Inglés I,0,0,
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 1,11.28,Sistemas Complejos,3,0,
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 1,19.05,Psicología del Desarrollo,6,0,19.03
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 1,61.17,Economía del Comportamiento,6,0,94.34|19.03
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 1,71.88,Gestión de Datos,6,0,71.20
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 1,93.36,Probabilidad,3,0,92.10|93.20
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 2,11.67,Estadística Aplicada,6,0,93.36
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 2,19.06,Lenguaje y cognición,6,0,
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 2,19.07,Cerebro y neurociencias cognitivas,6,0,19.03|19.04
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 2,94.52,Inglés II,0,0,94.51
+Licenciatura en Ciencias del Comportamiento,Año 2 - Cuatrimestre 2,94.66,Metodología de la Investigación en Ciencias del comportamiento,6,0,11.67
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 1,19.08,Neurotecnología,6,0,
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 1,71.22,Sistemas de Inteligencia Artificial,3,0,92.10|71.20
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 1,81.92,Gestión de proyectos de innovación y transformación,6,0,
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 1,82.04,Analítica Descriptiva,6,0,11.67|71.88
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 1,94.67,Ética profesional,3,0,
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 2,19.09,Neurociencia aplicada al comportamiento del consumidor,6,0,19.07|19.06
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 2,19.10,Medición y evaluación de la conducta,6,0,19.01|94.66
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 2,61.05,Economía de la Salud,3,0,94.34
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 2,82.05,Análisis Predictivo,6,0,11.67
+Licenciatura en Ciencias del Comportamiento,Año 3 - Cuatrimestre 2,94.35,Antropología cognitiva,3,0,
+Licenciatura en Ciencias del Comportamiento,Año 4 - Cuatrimestre 1,19.11,Sistemas sociotécnicos adaptativos,3,0,
+Licenciatura en Ciencias del Comportamiento,Año 4 - Cuatrimestre 1,19.12,Técnicas de modificación del comportamiento,3,0,19.01
+Licenciatura en Ciencias del Comportamiento,Año 4 - Cuatrimestre 1,19.13,Proyecto final de carrera (Anual),6,0,
+Licenciatura en Ciencias del Comportamiento,Año 4 - Cuatrimestre 2,19.14,Cognición afectiva y motivacional,3,0,19.07
+Licenciatura en Ciencias del Comportamiento,Electivas,COLAPSADA,Electivas (sin listar),33,33,
+Licenciatura en Analítica Empresarial y Social,Año 1 - Cuatrimestre 1,71.80,Utilitarios en Informática,6,0,
+Licenciatura en Analítica Empresarial y Social,Año 1 - Cuatrimestre 1,81.06,Introducción a la Administración,6,0,
+Licenciatura en Analítica Empresarial y Social,Año 1 - Cuatrimestre 1,93.20,Análisis Matemático,6,0,
+Licenciatura en Analítica Empresarial y Social,Año 1 - Cuatrimestre 1,93.21,Álgebra,6,0,
+Licenciatura en Analítica Empresarial y Social,Año 1 - Cuatrimestre 2,71.20,Informática General,3,0,
+Licenciatura en Analítica Empresarial y Social,Año 1 - Cuatrimestre 2,82.15,Matemática Aplicada,6,0,93.20|93.21
+Licenciatura en Analítica Empresarial y Social,Año 1 - Cuatrimestre 2,93.16,Matemática Discreta,3,0,
+Licenciatura en Analítica Empresarial y Social,Año 1 - Cuatrimestre 2,94.24,Metodología del Aprendizaje,3,0,
+Licenciatura en Analítica Empresarial y Social,Año 1 - Cuatrimestre 2,94.60,Panorama Histórico Global,3,0,
+Licenciatura en Analítica Empresarial y Social,Electivas Orientación,COLAPSADA,Electivas (sin listar),18,18,
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 1,61.81,Microeconomía,3,0,93.20
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 1,71.45,Estructura de Datos y Programación,6,0,71.20
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 1,93.36,Probabilidad,3,0,93.16|82.15
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 1,94.61,Filosofía,3,0,
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 1,94.62,Ética en los Negocios,3,0,
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 2,11.67,Estadística Aplicada,6,0,93.36
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 2,71.88,Gestión de Datos,6,0,71.20
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 2,72.74,Visualización de Información,3,0,71.20
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 2,94.40,Estructura de las Organizaciones,3,0,81.06
+Licenciatura en Analítica Empresarial y Social,Año 2 - Cuatrimestre 2,94.90,Inglés I (analista),0,0,
+Licenciatura en Analítica Empresarial y Social,Año 3 - Cuatrimestre 1,61.82,Macroeconomía,3,0,93.20
+Licenciatura en Analítica Empresarial y Social,Año 3 - Cuatrimestre 1,61.87,Derecho Público y Privado I,3,0,
+Licenciatura en Analítica Empresarial y Social,Año 3 - Cuatrimestre 1,82.01,Proyecto I,3,0,11.67|71.88|72.74
+Licenciatura en Analítica Empresarial y Social,Año 3 - Cuatrimestre 1,82.03,Gestión del Ciclo de Vida de la Información,3,0,71.88
+Licenciatura en Analítica Empresarial y Social,Año 3 - Cuatrimestre 1,82.04,Analítica Descriptiva,6,0,11.67|71.88
+Licenciatura en Analítica Empresarial y Social,Electivas Gestíon,COLAPSADA,Electivas (sin listar),18,18,
+Licenciatura en Analítica Empresarial y Social,Electivas Informática,COLAPSADA,Electivas (sin listar),15,15,
+Licenciatura en Analítica Empresarial y Social,Año 3 - Cuatrimestre 2,11.86,Investigación de Operaciones I,3,0,11.67
+Licenciatura en Analítica Empresarial y Social,Año 3 - Cuatrimestre 2,82.05,Análisis Predictivo,6,0,11.67
+Licenciatura en Analítica Empresarial y Social,Electivas Analytics,COLAPSADA,Electivas (sin listar),15,15,
+Licenciatura en Analítica Empresarial y Social,Electivas Social,COLAPSADA,Electivas (sin listar),12,12,
+Licenciatura en Analítica Empresarial y Social,Año 4 - Cuatrimestre 1,11.87,Investigación de Operaciones II,3,0,11.67
+Licenciatura en Analítica Empresarial y Social,Año 4 - Cuatrimestre 2,11.63,Simulación,3,0,11.86|11.87
+Licenciatura en Analítica Empresarial y Social,Año 4 - Cuatrimestre 2,82.02,Proyecto Final - Analítica,3,0,82.05|11.86|72.74|82.04|11.87|82.03|82.01
+Licenciatura en Analítica Empresarial y Social,Año 4 - Cuatrimestre 2,94.91,Inglés II (licenciado),0,0,94.90
+Ingeniería Química,Año 1 - Cuatrimestre 1,12.67,Química General,6,0,
+Ingeniería Química,Año 1 - Cuatrimestre 1,71.58,Informática General,3,0,
+Ingeniería Química,Año 1 - Cuatrimestre 1,92.01,Análisis Matemático I,6,0,
+Ingeniería Química,Año 1 - Cuatrimestre 1,93.18,Álgebra Lineal,6,0,
+Ingeniería Química,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,0,
+Ingeniería Química,Año 1 - Cuatrimestre 2,13.01,Química Inorgánica,6,0,12.67
+Ingeniería Química,Año 1 - Cuatrimestre 2,17.01,Introducción a la Ingeniería Química,3,0,12.67
+Ingeniería Química,Año 1 - Cuatrimestre 2,31.08,Sistemas de Representación,3,0,
+Ingeniería Química,Año 1 - Cuatrimestre 2,71.90,Certificaciones tecnológicas,0,0,
+Ingeniería Química,Año 1 - Cuatrimestre 2,92.02,Análisis Matemático II,6,0,92.01|93.18
+Ingeniería Química,Año 1 - Cuatrimestre 2,93.41,Física I,6,0,92.01
+Ingeniería Química,Año 2 - Cuatrimestre 1,13.03,Química Orgánica I,6,0,13.01
+Ingeniería Química,Año 2 - Cuatrimestre 1,16.55,Biología,3,0,
+Ingeniería Química,Año 2 - Cuatrimestre 1,17.02,Procesos Industriales,3,0,93.41|17.01
+Ingeniería Química,Año 2 - Cuatrimestre 1,92.03,Análisis Matemático III,6,0,92.01|93.18
+Ingeniería Química,Año 2 - Cuatrimestre 1,93.42,Física II,6,0,92.02
+Ingeniería Química,Año 2 - Cuatrimestre 2,12.33,Química Orgánica II,6,0,13.03
+Ingeniería Química,Año 2 - Cuatrimestre 2,92.05,Análisis Matemático IV,4,0,92.02|92.03
+Ingeniería Química,Año 2 - Cuatrimestre 2,93.07,Métodos Numéricos,3,0,92.03
+Ingeniería Química,Año 2 - Cuatrimestre 2,93.24,Probabilidad y Estadística,6,0,92.02
+Ingeniería Química,Año 2 - Cuatrimestre 2,93.43,Física III,6,0,92.03|93.41
+Ingeniería Química,Año 3 - Cuatrimestre 1,12.19,Química Analítica,6,0,13.01|93.24
+Ingeniería Química,Año 3 - Cuatrimestre 1,12.20,Química-Física,6,0,92.03|17.02
+Ingeniería Química,Año 3 - Cuatrimestre 1,17.03,Bioquímica y Microbiología Aplicadas,5,0,12.33|16.55
+Ingeniería Química,Año 3 - Cuatrimestre 1,30.62,Materiales para la Industria Química,3,0,13.01|93.42
+Ingeniería Química,Año 3 - Cuatrimestre 1,94.43,Metodología del Diseño,3,72,
+Ingeniería Química,Año 3 - Cuatrimestre 2,12.26,Termodinámica,6,0,12.20
+Ingeniería Química,Año 3 - Cuatrimestre 2,17.04,Fenómenos de Transporte,6,0,12.20
+Ingeniería Química,Año 3 - Cuatrimestre 2,21.06,Electrotecnia,3,0,93.43
+Ingeniería Química,Año 3 - Cuatrimestre 2,30.61,Instalaciones Mecánicas en Plantas de Proceso,6,0,30.62|93.41|31.08
+Ingeniería Química,Año 3 - Cuatrimestre 2,94.44,Proyecto Interdisciplinario,3,0,94.43
+Ingeniería Química,Año 3 - Cuatrimestre 2,94.51,Inglés I,0,0,
+Ingeniería Química,Año 4 - Cuatrimestre 1,12.11,Operaciones Unitarias I,6,0,30.61|17.04|12.26
+Ingeniería Química,Año 4 - Cuatrimestre 1,12.12,Operaciones Unitarias II,6,0,17.04|12.26
+Ingeniería Química,Año 4 - Cuatrimestre 1,12.24,Ingenieria de Reacciones y Reactores I,6,0,17.04|93.07
+Ingeniería Química,Año 4 - Cuatrimestre 1,61.31,Derecho para Ingenieros,3,144,
+Ingeniería Química,Año 4 - Cuatrimestre 2,12.13,Operaciones Unitarias III,6,0,12.11
+Ingeniería Química,Año 4 - Cuatrimestre 2,12.25,Ingeniería de Reacciones y Reactores II,4,0,12.24|12.11|17.03
+Ingeniería Química,Año 4 - Cuatrimestre 2,12.27,Simulación de Procesos,3,0,12.11|12.12
+Ingeniería Química,Año 4 - Cuatrimestre 2,17.05,Control de Procesos,4,0,12.12|92.05
+Ingeniería Química,Año 5 - Cuatrimestre 1,11.15,Organización Industrial,3,0,93.24
+Ingeniería Química,Año 5 - Cuatrimestre 1,12.85,Diseño Conceptual de Procesos,4,0,12.24|12.13|12.27
+Ingeniería Química,Año 5 - Cuatrimestre 1,17.06,Proyecto Final de Carrera I,6,0,12.13|12.27|17.05
+Ingeniería Química,Año 5 - Cuatrimestre 1,61.27,Análisis de Coyuntura Económica,3,0,93.24
+Ingeniería Química,Año 5 - Cuatrimestre 1,94.52,Inglés II,0,0,94.51
+Ingeniería Química,Año 5 - Cuatrimestre 2,12.66,Gestión de la Salud y la Seguridad en el Trabajo,3,168,
+Ingeniería Química,Año 5 - Cuatrimestre 2,17.07,Proyecto Final de Carrera II,3,0,17.06
+Ingeniería Química,Año 5 - Cuatrimestre 2,17.15,Introducción a la Ingeniería Ambiental,3,0,12.11
+Ingeniería Química,Año 5 - Cuatrimestre 2,61.16,Introducción a las Finanzas,3,0,11.15|61.27
+Ingeniería Química,Año 5 - Cuatrimestre 2,94.65,Practica Profesional supervisada,0,144,
+Ingeniería Química,Electivas,COLAPSADA,Electivas (sin listar),30,30,
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 1,12.67,Química General,6,0,
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 1,71.58,Informática General,3,0,
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 1,92.01,Análisis Matemático I,6,0,
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 1,93.18,Álgebra Lineal,6,0,
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,0,
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 2,12.34,Química Orgánica para Petroleo,6,0,12.67
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 2,31.08,Sistemas de Representación,3,0,
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 2,46.01,Introducción a la Ingeniería en Petróleo,3,0,
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 2,92.02,Análisis Matemático II,6,0,92.01|93.18
+Ingeniería en Petróleo,Año 1 - Cuatrimestre 2,93.41,Física I,6,0,92.01
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 1,71.59,Estructura de Datos y Programación,6,0,71.58
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 1,92.03,Análisis Matemático III,6,0,92.01|93.18
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 1,93.24,Probabilidad y Estadística,6,0,92.02
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 1,93.42,Física II,6,0,92.02
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 2,16.55,Biología,3,0,94.33
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 2,31.19,Estática y Resistencia de Materiales,6,0,92.03|31.08
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 2,46.21,Geología I,3,0,46.01|93.42
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 2,92.05,Análisis Matemático IV,4,0,92.02|92.03
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 2,93.07,Métodos Numéricos,3,0,92.03
+Ingeniería en Petróleo,Año 2 - Cuatrimestre 2,93.43,Física III,6,0,92.03|93.41
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 1,21.06,Electrotecnia,3,0,93.43
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 1,31.21,Termodinámica,6,0,93.42
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 1,31.22,Mecánica de Fluidos,6,0,92.03
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 1,46.22,Geofísica de Reservorios,3,0,46.21
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 1,93.61,Física IV,4,0,93.43
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 1,94.43,Metodología del Diseño,3,72,
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 2,11.15,Organización Industrial,3,0,93.24
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 2,12.83,Seguridad Ocupacional y Ambiental,3,0,12.34|16.55
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 2,21.09,Máquinas Eléctricas,3,0,21.06
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 2,30.70,Introducción a Mecánica de Rocas,3,0,31.19
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 2,46.41,Petrofísica y Fluidos de Reservorio,6,0,31.21|31.22|46.21
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 2,46.61,Ingeniería de Perforación I,3,0,46.21|31.19
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 2,94.44,Proyecto Interdisciplinario,3,0,94.43
+Ingeniería en Petróleo,Año 3 - Cuatrimestre 2,94.51,Inglés I,0,0,
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 1,46.23,Geología II,3,0,46.22|46.41
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 1,46.42,Registros de Pozo I,6,0,93.61|46.41
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 1,46.44,Análisis de Transientes de Presión,3,0,30.70|92.05|46.41
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 1,46.46,Ingeniería de Reservorios,6,0,46.41
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 1,46.63,Ingeniería de Workover I,3,0,46.61
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 1,46.65,Instalaciones de Superficie,3,0,31.21|12.34|46.41
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 1,71.90,Certificaciones tecnológicas,0,0,
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 2,46.66,Gas y Gasolina Natural,3,0,46.65
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 2,46.67,Ingeniería de Producción I,6,0,46.65|46.41|21.09
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 2,46.81,Gestión Ambiental en la Industria,3,0,12.83
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 2,46.82,Evaluación de Proyectos,3,0,46.46
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 2,61.27,Análisis de Coyuntura Económica,3,0,11.15
+Ingeniería en Petróleo,Año 4 - Cuatrimestre 2,94.52,Inglés II,0,0,94.51
+Ingeniería en Petróleo,Año 5 - Cuatrimestre 1,46.69,Transporte y Cadena de Valor de los Hidrocarburos,3,0,46.66|46.67
+Ingeniería en Petróleo,Año 5 - Cuatrimestre 1,46.83,Desarrollo de Yacimientos,3,0,46.23|46.66|46.82|46.67|46.42
+Ingeniería en Petróleo,Año 5 - Cuatrimestre 1,61.16,Introducción a las Finanzas,3,0,61.27
+Ingeniería en Petróleo,Año 5 - Cuatrimestre 1,61.31,Derecho para Ingenieros,3,0,
+Ingeniería en Petróleo,Año 5 - Cuatrimestre 2,46.02,Práctica de Campo I,0,72,46.21|46.41|46.67
+Ingeniería en Petróleo,Año 5 - Cuatrimestre 2,46.03,Práctica de Campo II,0,144,46.02|46.63|46.46
+Ingeniería en Petróleo,Año 5 - Cuatrimestre 2,46.70,Industrialización y Economía de los Hidrocarburos,3,0,46.69
+Ingeniería en Petróleo,Electivas Generales,COLAPSADA,Electivas (sin listar),13,13,
+Ingeniería en Petróleo,Electivas Petróleo,COLAPSADA,Electivas (sin listar),24,24,
+Licenciatura en Negocios,Año 1 - Cuatrimestre 1,71.20,Informática General,3,0,
+Licenciatura en Negocios,Año 1 - Cuatrimestre 1,71.30,Introducción a la tecnología informática,3,0,
+Licenciatura en Negocios,Año 1 - Cuatrimestre 1,71.90,Certificaciones tecnológicas,0,0,
+Licenciatura en Negocios,Año 1 - Cuatrimestre 1,81.06,Introducción a la Administración,6,0,
+Licenciatura en Negocios,Año 1 - Cuatrimestre 1,81.07,Sistemas Contables,6,0,
+Licenciatura en Negocios,Año 1 - Cuatrimestre 1,93.21,Álgebra,6,0,
+Licenciatura en Negocios,Año 1 - Cuatrimestre 2,71.38,Programación web,3,0,71.30
+Licenciatura en Negocios,Año 1 - Cuatrimestre 2,81.11,Contabilidad Gerencial,6,0,81.07
+Licenciatura en Negocios,Año 1 - Cuatrimestre 2,81.53,Negocios en Internet,3,0,71.30|81.06
+Licenciatura en Negocios,Año 1 - Cuatrimestre 2,93.20,Análisis Matemático,6,0,
+Licenciatura en Negocios,Año 1 - Cuatrimestre 2,94.60,Panorama Histórico Global,3,0,
+Licenciatura en Negocios,Año 1 - Cuatrimestre 2,94.61,Filosofía,3,0,
+Licenciatura en Negocios,Año 2 - Cuatrimestre 1,61.12,Gestión Financiera,6,0,81.11|81.07|93.21
+Licenciatura en Negocios,Año 2 - Cuatrimestre 1,61.81,Microeconomía,3,0,93.20
+Licenciatura en Negocios,Año 2 - Cuatrimestre 1,71.88,Gestión de Datos,6,0,71.30|71.20
+Licenciatura en Negocios,Año 2 - Cuatrimestre 1,81.20,Comercialización,3,0,81.06
+Licenciatura en Negocios,Año 2 - Cuatrimestre 1,93.39,Estadística,6,0,71.20|93.20
+Licenciatura en Negocios,Año 2 - Cuatrimestre 2,61.82,Macroeconomía,3,0,93.20
+Licenciatura en Negocios,Año 2 - Cuatrimestre 2,61.87,Derecho Público y Privado I,3,0,94.60|94.61
+Licenciatura en Negocios,Año 2 - Cuatrimestre 2,81.29,Gestión organizacional basada en procesos de negocio,6,0,81.06|71.20
+Licenciatura en Negocios,Año 2 - Cuatrimestre 2,81.32,Análisis funcional de aplicaciones informáticas,3,0,71.20
+Licenciatura en Negocios,Año 2 - Cuatrimestre 2,94.63,Epistemología y Heurística,3,0,94.61
+Licenciatura en Negocios,Año 2 - Cuatrimestre 2,94.64,Prácticas Expositivas,3,24,
+Licenciatura en Negocios,Año 3 - Cuatrimestre 1,11.85,Toma de Decisiones,6,0,93.39|81.06
+Licenciatura en Negocios,Año 3 - Cuatrimestre 1,81.47,Impuestos para la toma de decisiones I,3,0,81.11|61.82|61.87
+Licenciatura en Negocios,Año 3 - Cuatrimestre 1,81.57,Arquitectura de soluciones digitales,3,0,81.32|71.88|81.53
+Licenciatura en Negocios,Año 3 - Cuatrimestre 1,94.40,Estructura de las Organizaciones,3,0,81.06
+Licenciatura en Negocios,Año 3 - Cuatrimestre 2,11.83,Gestión de Operaciones,6,0,93.39|81.06
+Licenciatura en Negocios,Año 3 - Cuatrimestre 2,81.21,Gestión de Ventas,3,0,81.20
+Licenciatura en Negocios,Año 3 - Cuatrimestre 2,81.48,Impuestos para la toma de decisiones II,3,0,81.47
+Licenciatura en Negocios,Año 3 - Cuatrimestre 2,81.68,Sistemas Integrados de Gestión I,3,0,81.11|81.29
+Licenciatura en Negocios,Año 3 - Cuatrimestre 2,94.27,Administración de Recursos Humanos,3,0,61.87
+Licenciatura en Negocios,Año 4 - Cuatrimestre 1,81.34,Arquitectura empresarial,3,0,81.57|81.29
+Licenciatura en Negocios,Año 4 - Cuatrimestre 1,81.42,Estrategia Empresarial,3,144,
+Licenciatura en Negocios,Electivas Gestión,COLAPSADA,Electivas (sin listar),27,27,
+Licenciatura en Negocios,Electivas Proyecto Final,COLAPSADA,Electivas (sin listar),3,3,
+Licenciatura en Negocios,Electivas Sistemas y Tecnología,COLAPSADA,Electivas (sin listar),30,30,
+Ingeniería Naval,Año 1 - Cuatrimestre 1,12.67,Química General,6,0,
+Ingeniería Naval,Año 1 - Cuatrimestre 1,71.58,Informática General,3,0,
+Ingeniería Naval,Año 1 - Cuatrimestre 1,92.01,Análisis Matemático I,6,0,
+Ingeniería Naval,Año 1 - Cuatrimestre 1,93.18,Álgebra Lineal,6,0,
+Ingeniería Naval,Año 1 - Cuatrimestre 1,94.33,Tecnología y Sociedad,3,0,
+Ingeniería Naval,Año 1 - Cuatrimestre 2,30.26,Ciencia de Materiales I,6,0,12.67
+Ingeniería Naval,Año 1 - Cuatrimestre 2,31.08,Sistemas de Representación,3,0,
+Ingeniería Naval,Año 1 - Cuatrimestre 2,32.06,Introducción a la Ing. Naval,3,0,
+Ingeniería Naval,Año 1 - Cuatrimestre 2,71.90,Certificaciones tecnológicas,0,0,
+Ingeniería Naval,Año 1 - Cuatrimestre 2,92.02,Análisis Matemático II,6,0,92.01|93.18
+Ingeniería Naval,Año 1 - Cuatrimestre 2,93.41,Física I,6,0,92.01
+Ingeniería Naval,Año 2 - Cuatrimestre 1,16.55,Biología,3,0,
+Ingeniería Naval,Año 2 - Cuatrimestre 1,30.41,Diseño Mecánico I,6,0,93.41|30.26|31.08
+Ingeniería Naval,Año 2 - Cuatrimestre 1,71.59,Estructura de Datos y Programación,6,0,71.58|71.90
+Ingeniería Naval,Año 2 - Cuatrimestre 1,92.03,Análisis Matemático III,6,0,92.01|93.18
+Ingeniería Naval,Año 2 - Cuatrimestre 1,93.42,Física II,6,0,92.02
+Ingeniería Naval,Año 2 - Cuatrimestre 2,30.42,Diseño Mecánico II,6,0,92.02|92.03|93.41
+Ingeniería Naval,Año 2 - Cuatrimestre 2,31.21,Termodinámica,6,0,93.42|93.41
+Ingeniería Naval,Año 2 - Cuatrimestre 2,92.04,Análisis Matemàtico IV,6,0,92.02|92.03
+Ingeniería Naval,Año 2 - Cuatrimestre 2,93.07,Métodos Numéricos,3,0,71.58|92.03
+Ingeniería Naval,Año 2 - Cuatrimestre 2,93.43,Física III,6,0,92.03|93.41
+Ingeniería Naval,Año 3 - Cuatrimestre 1,30.25,Ciencia de Materiales II,3,0,30.26
+Ingeniería Naval,Año 3 - Cuatrimestre 1,30.43,Diseño Mecánico III A,4,0,30.42|92.03|93.07|92.04
+Ingeniería Naval,Año 3 - Cuatrimestre 1,30.44,Diseño Mecánico III B,4,0,30.42|92.03|93.07|92.04
+Ingeniería Naval,Año 3 - Cuatrimestre 1,32.66,Hidrostática y Estabilidad,6,0,92.03|93.41|31.08
+Ingeniería Naval,Año 3 - Cuatrimestre 1,93.61,Física IV,4,0,93.42|93.43
+Ingeniería Naval,Año 3 - Cuatrimestre 1,94.43,Metodología del Diseño,3,72,
+Ingeniería Naval,Año 3 - Cuatrimestre 2,21.08,Electrotecnia,6,0,93.43
+Ingeniería Naval,Año 3 - Cuatrimestre 2,31.22,Mecánica de Fluidos,6,0,31.21|92.03|93.42|93.41
+Ingeniería Naval,Año 3 - Cuatrimestre 2,32.69,Resistencia y Propulsión,6,0,32.66
+Ingeniería Naval,Año 3 - Cuatrimestre 2,93.24,Probabilidad y Estadística,6,0,92.02
+Ingeniería Naval,Año 3 - Cuatrimestre 2,94.44,Proyecto Interdisciplinario,3,0,94.43
+Ingeniería Naval,Año 3 - Cuatrimestre 2,94.51,Inglés I,0,0,
+Ingeniería Naval,Año 4 - Cuatrimestre 1,11.15,Organización Industrial,3,0,93.24
+Ingeniería Naval,Año 4 - Cuatrimestre 1,22.10,Electrónica e Instrumentación,6,0,92.04|21.08
+Ingeniería Naval,Año 4 - Cuatrimestre 1,30.49,Máquinas Térmicas e Hidráulicas,6,0,31.22
+Ingeniería Naval,Año 4 - Cuatrimestre 1,32.54,Construcción Naval,6,0,32.66|30.44
+Ingeniería Naval,Año 4 - Cuatrimestre 1,61.27,Análisis de Coyuntura Económica,3,0,93.24
+Ingeniería Naval,Año 4 - Cuatrimestre 2,12.83,Seguridad Ocupacional y Ambiental,3,168,
+Ingeniería Naval,Año 4 - Cuatrimestre 2,30.45,Diseño Mecánico IV,6,0,30.43|30.25|30.44
+Ingeniería Naval,Año 4 - Cuatrimestre 2,32.03,Motores Marinos,6,0,30.49
+Ingeniería Naval,Año 4 - Cuatrimestre 2,32.56,Alistamiento Naval,6,0,31.21|31.22|32.66
+Ingeniería Naval,Año 4 - Cuatrimestre 2,61.31,Derecho para Ingenieros,3,0,
+Ingeniería Naval,Año 5 - Cuatrimestre 1,32.49,Estructura de Buques,6,0,30.44
+Ingeniería Naval,Año 5 - Cuatrimestre 1,32.64,Plantas Propulsoras Marinas,6,0,22.10|30.45|32.03
+Ingeniería Naval,Año 5 - Cuatrimestre 1,32.72,Proyecto de Buques,6,0,32.54|32.56|30.45|32.03
+Ingeniería Naval,Año 5 - Cuatrimestre 2,32.05,Astilleros y Mantenimiento de Buques,4,144,
+Ingeniería Naval,Año 5 - Cuatrimestre 2,32.70,Práctica de Embarque,0,200,
+Ingeniería Naval,Año 5 - Cuatrimestre 2,32.71,Proyecto de Embarcaciones de Trabajo,4,0,32.54|32.56|30.45|32.03
+Ingeniería Naval,Año 5 - Cuatrimestre 2,32.73,Proyecto Final (Anual),3,0,32.72
+Ingeniería Naval,Año 5 - Cuatrimestre 2,94.52,Inglés II,0,0,94.51
+Ingeniería Naval,Año 5 - Cuatrimestre 2,94.65,Practica Profesional supervisada,0,144,
+Ingeniería Naval,Electivas Area Gestión,COLAPSADA,Electivas (sin listar),4,4,
+Ingeniería Naval,Electivas Area Tecnologia,COLAPSADA,Electivas (sin listar),6,6,
