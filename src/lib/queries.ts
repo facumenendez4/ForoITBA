@@ -39,17 +39,6 @@ export type CareerSubject = {
   subjects: Subject
 }
 
-export type SubjectMetrics = {
-  career_id: string
-  career_name: string
-  review_count: number
-  difficulty_mode: number | null
-  difficulty_distribution: Record<string, number> | null
-  workload_mode: number | null
-  credits: number | null
-  usefulness_avg: number | null
-}
-
 export type PublicReview = {
   id: string
   subject_code: string
@@ -129,15 +118,6 @@ export async function getSubjectCareers(subjectCode: string) {
     .select("id, career_id, subject_code, credits, term, elective_group, is_elective, prerequisites, required_credits, careers:career_id(id, name, slug)")
     .eq("subject_code", subjectCode)
   return data ?? []
-}
-
-export async function getSubjectMetrics(subjectCode: string, careerId?: string): Promise<SubjectMetrics[]> {
-  const supabase = await createClient()
-  const { data } = await supabase.rpc("get_subject_metrics", {
-    p_subject_code: subjectCode,
-    p_career_id: careerId ?? null,
-  })
-  return (data ?? []) as SubjectMetrics[]
 }
 
 export async function getSubjectReviews(subjectCode: string): Promise<PublicReview[]> {

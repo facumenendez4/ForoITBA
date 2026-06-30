@@ -51,6 +51,16 @@ export async function submitReview(
   if (comment && comment.length > MAX_COMMENT)
     return { ok: false, error: `El comentario supera ${MAX_COMMENT} caracteres.` }
 
+  // La carrera tiene que dictar realmente esta materia (anti metric-poisoning).
+  const { data: pairing } = await supabase
+    .from("career_subjects")
+    .select("id")
+    .eq("subject_code", subjectCode)
+    .eq("career_id", careerId)
+    .maybeSingle()
+  if (!pairing)
+    return { ok: false, error: "Esa carrera no dicta esta materia." }
+
   const { error } = await supabase.from("reviews").upsert(
     {
       user_id: user.id,
@@ -97,6 +107,16 @@ export async function submitContribution(
   if (body.length < 3) return { ok: false, error: "El aporte es muy corto." }
   if (body.length > MAX_BODY)
     return { ok: false, error: `El aporte supera ${MAX_BODY} caracteres.` }
+
+  // La carrera tiene que dictar realmente esta materia (anti metric-poisoning).
+  const { data: pairing } = await supabase
+    .from("career_subjects")
+    .select("id")
+    .eq("subject_code", subjectCode)
+    .eq("career_id", careerId)
+    .maybeSingle()
+  if (!pairing)
+    return { ok: false, error: "Esa carrera no dicta esta materia." }
 
   const { error } = await supabase.from("contributions").insert({
     user_id: user.id,
