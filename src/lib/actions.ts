@@ -140,13 +140,16 @@ export async function submitContribution(
  * unique(user_id, contribution_id): votar igual al voto actual lo quita (toggle);
  * votar distinto lo cambia.
  */
-export async function voteContribution(
-  contributionId: string,
+export async function voteTarget(
+  targetType: "review" | "contribution",
+  targetId: string,
   value: 1 | -1,
   slug: string
 ): Promise<ActionState> {
   if (value !== 1 && value !== -1)
     return { ok: false, error: "Voto inválido." }
+  if (targetType !== "review" && targetType !== "contribution")
+    return { ok: false, error: "Tipo de voto inválido." }
 
   const supabase = await createClient()
   const {
@@ -158,7 +161,8 @@ export async function voteContribution(
     .from("votes")
     .select("id, value")
     .eq("user_id", user.id)
-    .eq("contribution_id", contributionId)
+    .eq("target_type", targetType)
+    .eq("target_id", targetId)
     .maybeSingle()
 
   let error
@@ -172,9 +176,12 @@ export async function voteContribution(
         .eq("id", existing.id))
     }
   } else {
-    ;({ error } = await supabase
-      .from("votes")
-      .insert({ user_id: user.id, contribution_id: contributionId, value }))
+    ;({ error } = await supabase.from("votes").insert({
+      user_id: user.id,
+      target_type: targetType,
+      target_id: targetId,
+      value,
+    }))
   }
 
   if (error) return { ok: false, error: error.message }

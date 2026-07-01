@@ -50,6 +50,9 @@ export type PublicReview = {
   term_taken: string | null
   created_at: string
   updated_at: string
+  upvotes: number
+  downvotes: number
+  score: number
 }
 
 export type PublicContribution = {
@@ -184,11 +187,14 @@ export async function getMyReview(subjectCode: string): Promise<MyReview | null>
   return (data as MyReview | null) ?? null
 }
 
-/** Los votos del usuario sobre un conjunto de aportes: { contribution_id: 1 | -1 }. */
+/**
+ * Los votos del usuario sobre un conjunto de targets (reseñas y/o aportes):
+ * { target_id: 1 | -1 }. Los ids de reseñas y aportes no colisionan (uuid).
+ */
 export async function getMyVotes(
-  contributionIds: string[]
+  targetIds: string[]
 ): Promise<Record<string, 1 | -1>> {
-  if (contributionIds.length === 0) return {}
+  if (targetIds.length === 0) return {}
   const supabase = await createClient()
   const {
     data: { user },
@@ -197,13 +203,13 @@ export async function getMyVotes(
 
   const { data } = await supabase
     .from("votes")
-    .select("contribution_id, value")
+    .select("target_id, value")
     .eq("user_id", user.id)
-    .in("contribution_id", contributionIds)
+    .in("target_id", targetIds)
 
   const map: Record<string, 1 | -1> = {}
   for (const row of data ?? []) {
-    map[row.contribution_id as string] = row.value as 1 | -1
+    map[row.target_id as string] = row.value as 1 | -1
   }
   return map
 }

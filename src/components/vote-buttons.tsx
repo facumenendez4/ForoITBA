@@ -2,12 +2,13 @@
 
 import { useState, useTransition } from "react"
 import { useRouter } from "next/navigation"
-import { voteContribution } from "@/lib/actions"
+import { voteTarget } from "@/lib/actions"
 import { cn } from "@/lib/utils"
 import { ThumbsUp, ThumbsDown } from "lucide-react"
 
 type Props = {
-  contributionId: string
+  targetType: "review" | "contribution"
+  targetId: string
   slug: string
   upvotes: number
   downvotes: number
@@ -16,7 +17,8 @@ type Props = {
 }
 
 export function VoteButtons({
-  contributionId,
+  targetType,
+  targetId,
   slug,
   upvotes,
   downvotes,
@@ -36,8 +38,7 @@ export function VoteButtons({
     if (vote === -1) setDown((n) => n - 1)
 
     if (vote === value) {
-      // toggle off
-      setVote(0)
+      setVote(0) // toggle off
     } else {
       if (value === 1) setUp((n) => n + 1)
       else setDown((n) => n + 1)
@@ -52,7 +53,7 @@ export function VoteButtons({
     }
     applyOptimistic(value)
     startTransition(async () => {
-      const res = await voteContribution(contributionId, value, slug)
+      const res = await voteTarget(targetType, targetId, value, slug)
       if (!res.ok) router.refresh() // resync si falló
     })
   }

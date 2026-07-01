@@ -40,7 +40,10 @@ export default async function SubjectPage({ params }: Props) {
       getMyReview(subject.code),
     ])
 
-  const myVotes = await getMyVotes(contributions.map((c) => c.id))
+  const myVotes = await getMyVotes([
+    ...reviews.map((r) => r.id),
+    ...contributions.map((c) => c.id),
+  ])
 
   const careers = careerLinks.map((cl: any) => ({
     id: cl.careers.id as string,

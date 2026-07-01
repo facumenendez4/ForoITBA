@@ -42,6 +42,20 @@ type Props = {
   myVotes: Record<string, 1 | -1>
 }
 
+type SortBy = "votes" | "recent"
+
+/** Ordena por votos (score desc, desempata por más reciente) o por más reciente. */
+function sortBySelected<T extends { score: number; created_at: string }>(
+  items: T[],
+  sortBy: SortBy
+): T[] {
+  const byRecent = (a: T, b: T) =>
+    new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+  return [...items].sort((a, b) =>
+    sortBy === "votes" ? b.score - a.score || byRecent(a, b) : byRecent(a, b)
+  )
+}
+
 /** Moda de una lista; en empate gana el valor más alto (criterio del brief). */
 function mode(nums: number[]): number | null {
   if (nums.length === 0) return null
@@ -164,8 +178,12 @@ export function SubjectContent({
 
   const allIncluded = included.size === careers.length
 
+  const [sortBy, setSortBy] = useState<SortBy>("votes")
   const materials = contributions.filter((c) => c.type === "material")
   const tips = contributions.filter((c) => c.type === "consejo")
+  const sortedReviews = sortBySelected(reviews, sortBy)
+  const sortedMaterials = sortBySelected(materials, sortBy)
+  const sortedTips = sortBySelected(tips, sortBy)
 
   return (
     <div className="space-y-8">
@@ -323,20 +341,24 @@ export function SubjectContent({
 
       {/* Content tabs */}
       <Tabs defaultValue="reviews">
-        <TabsList>
-          <TabsTrigger value="reviews" className="gap-1.5">
-            <MessageSquare className="h-3.5 w-3.5" />
-            Reseñas ({reviews.length})
-          </TabsTrigger>
-          <TabsTrigger value="material" className="gap-1.5">
-            <BookOpen className="h-3.5 w-3.5" />
-            Material ({materials.length})
-          </TabsTrigger>
-          <TabsTrigger value="tips" className="gap-1.5">
-            <Lightbulb className="h-3.5 w-3.5" />
-            Consejos ({tips.length})
-          </TabsTrigger>
-        </TabsList>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <TabsList>
+            <TabsTrigger value="reviews" className="gap-1.5">
+              <MessageSquare className="h-3.5 w-3.5" />
+              Reseñas ({reviews.length})
+            </TabsTrigger>
+            <TabsTrigger value="material" className="gap-1.5">
+              <BookOpen className="h-3.5 w-3.5" />
+              Material ({materials.length})
+            </TabsTrigger>
+            <TabsTrigger value="tips" className="gap-1.5">
+              <Lightbulb className="h-3.5 w-3.5" />
+              Consejos ({tips.length})
+            </TabsTrigger>
+          </TabsList>
+
+          <SortControl sortBy={sortBy} onChange={setSortBy} />
+        </div>
 
         <TabsContent value="reviews" className="mt-4 space-y-3">
           <div className="mb-1">
@@ -357,12 +379,13 @@ export function SubjectContent({
           {reviews.length === 0 ? (
             <EmptyState text="Todavía no hay reseñas. ¡Sé el primero en dejar una!" />
           ) : (
-            reviews.map((r) => (
+            sortedReviews.map((r) => (
               <ReviewCard
                 key={r.id}
                 review={r}
                 careers={careers}
                 slug={slug}
+                myVote={myVotes[r.id] ?? 0}
                 isAuthed={isAuthed}
               />
             ))
@@ -388,7 +411,7 @@ export function SubjectContent({
           {materials.length === 0 ? (
             <EmptyState text="Sin material compartido aún." />
           ) : (
-            materials.map((c) => (
+            sortedMaterials.map((c) => (
               <ContributionCard
                 key={c.id}
                 contribution={c}
@@ -420,7 +443,7 @@ export function SubjectContent({
           {tips.length === 0 ? (
             <EmptyState text="Sin consejos aún." />
           ) : (
-            tips.map((c) => (
+            sortedTips.map((c) => (
               <ContributionCard
                 key={c.id}
                 contribution={c}
@@ -500,11 +523,13 @@ function ReviewCard({
   review,
   careers,
   slug,
+  myVote,
   isAuthed,
 }: {
   review: PublicReview
   careers: CareerInfo[]
   slug: string
+  myVote: 0 | 1 | -1
   isAuthed: boolean
 }) {
   const career = careers.find((c) => c.id === review.career_id)
@@ -545,14 +570,23 @@ function ReviewCard({
               day: "numeric",
             })}
           </span>
-          <span className="ml-auto">
+          <div className="ml-auto flex items-center gap-3">
+            <VoteButtons
+              targetType="review"
+              targetId={review.id}
+              slug={slug}
+              upvotes={review.upvotes}
+              downvotes={review.downvotes}
+              myVote={myVote}
+              isAuthed={isAuthed}
+            />
             <ReportButton
               targetType="review"
               targetId={review.id}
               slug={slug}
               isAuthed={isAuthed}
             />
-          </span>
+          </div>
         </div>
       </CardContent>
     </Card>
@@ -604,7 +638,8 @@ function ContributionCard({
             </div>
           </div>
           <VoteButtons
-            contributionId={contribution.id}
+            targetType="contribution"
+            targetId={contribution.id}
             slug={slug}
             upvotes={contribution.upvotes}
             downvotes={contribution.downvotes}
@@ -614,6 +649,38 @@ function ContributionCard({
         </div>
       </CardContent>
     </Card>
+  )
+}
+
+function SortControl({
+  sortBy,
+  onChange,
+}: {
+  sortBy: SortBy
+  onChange: (s: SortBy) => void
+}) {
+  const opts: { value: SortBy; label: string }[] = [
+    { value: "votes", label: "Más votados" },
+    { value: "recent", label: "Más recientes" },
+  ]
+  return (
+    <div className="inline-flex rounded-lg border p-0.5 text-xs">
+      {opts.map((o) => (
+        <button
+          key={o.value}
+          type="button"
+          onClick={() => onChange(o.value)}
+          className={cn(
+            "rounded-md px-2.5 py-1 font-medium transition-colors",
+            sortBy === o.value
+              ? "bg-primary text-primary-foreground"
+              : "text-muted-foreground hover:text-foreground"
+          )}
+        >
+          {o.label}
+        </button>
+      ))}
+    </div>
   )
 }
 
