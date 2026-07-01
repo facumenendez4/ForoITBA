@@ -352,6 +352,7 @@ export function SubjectContent({
                   careers={careerOptions}
                   defaultCareerId={defaultCareerId}
                   existing={myReview}
+                  viewerDisplayName={viewer?.displayName ?? null}
                 />
               )
             ) : (
@@ -394,6 +395,7 @@ export function SubjectContent({
                   slug={slug}
                   careers={careerOptions}
                   defaultCareerId={defaultCareerId}
+                  viewerDisplayName={viewer?.displayName ?? null}
                 />
               )
             ) : (
@@ -436,6 +438,7 @@ export function SubjectContent({
                   slug={slug}
                   careers={careerOptions}
                   defaultCareerId={defaultCareerId}
+                  viewerDisplayName={viewer?.displayName ?? null}
                 />
               )
             ) : (
@@ -574,6 +577,15 @@ function ReviewCard({
           <p className="text-sm leading-relaxed">{review.comment}</p>
         )}
         <div className="flex items-center gap-3 mt-2 text-xs text-muted-foreground">
+          <span>
+            {review.is_anonymous ? (
+              "Anónimo"
+            ) : (
+              <span className="font-medium text-foreground">
+                {review.author_name}
+              </span>
+            )}
+          </span>
           {review.term_taken && <span>Cursada: {review.term_taken}</span>}
           <span>
             {new Date(review.created_at).toLocaleDateString("es-AR", {
@@ -634,6 +646,15 @@ function ContributionCard({
               {contribution.body}
             </p>
             <div className="flex items-center gap-3 mt-2 text-xs text-muted-foreground">
+              <span>
+                {contribution.is_anonymous ? (
+                  "Anónimo"
+                ) : (
+                  <span className="font-medium text-foreground">
+                    {contribution.author_name}
+                  </span>
+                )}
+              </span>
               <span>
                 {new Date(contribution.created_at).toLocaleDateString("es-AR", {
                   year: "numeric",

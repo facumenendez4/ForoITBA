@@ -3,6 +3,7 @@ import { createClient } from "@/lib/supabase/server"
 export type Viewer = {
   userId: string
   careerId: string | null
+  displayName: string | null
 }
 
 export type MyReview = {
@@ -12,6 +13,7 @@ export type MyReview = {
   usefulness: number
   comment: string | null
   term_taken: string | null
+  is_anonymous: boolean
 }
 
 export type Career = {
@@ -53,6 +55,8 @@ export type PublicReview = {
   upvotes: number
   downvotes: number
   score: number
+  is_anonymous: boolean
+  author_name: string | null
 }
 
 export type PublicContribution = {
@@ -65,6 +69,8 @@ export type PublicContribution = {
   upvotes: number
   downvotes: number
   score: number
+  is_anonymous: boolean
+  author_name: string | null
 }
 
 export async function getCareers(): Promise<Career[]> {
@@ -162,11 +168,15 @@ export async function getViewer(): Promise<Viewer | null> {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("career_id")
+    .select("career_id, display_name")
     .eq("id", user.id)
     .single()
 
-  return { userId: user.id, careerId: profile?.career_id ?? null }
+  return {
+    userId: user.id,
+    careerId: profile?.career_id ?? null,
+    displayName: profile?.display_name ?? null,
+  }
 }
 
 /** La reseña propia del usuario para una materia (para prefill/editar), o null. */
@@ -179,7 +189,9 @@ export async function getMyReview(subjectCode: string): Promise<MyReview | null>
 
   const { data } = await supabase
     .from("reviews")
-    .select("career_id, difficulty, workload, usefulness, comment, term_taken")
+    .select(
+      "career_id, difficulty, workload, usefulness, comment, term_taken, is_anonymous"
+    )
     .eq("user_id", user.id)
     .eq("subject_code", subjectCode)
     .maybeSingle()
@@ -223,6 +235,7 @@ export type MyReviewListItem = {
   comment: string | null
   term_taken: string | null
   created_at: string
+  is_anonymous: boolean
   subjects: { name: string; slug: string }
   careers: { name: string }
 }
@@ -233,6 +246,7 @@ export type MyContributionListItem = {
   type: "material" | "consejo"
   body: string
   created_at: string
+  is_anonymous: boolean
   subjects: { name: string; slug: string }
   careers: { name: string }
 }
@@ -248,7 +262,7 @@ export async function getMyReviews(): Promise<MyReviewListItem[]> {
   const { data } = await supabase
     .from("reviews")
     .select(
-      "id, subject_code, difficulty, workload, usefulness, comment, term_taken, created_at, subjects(name, slug), careers:career_id(name)"
+      "id, subject_code, difficulty, workload, usefulness, comment, term_taken, created_at, is_anonymous, subjects(name, slug), careers:career_id(name)"
     )
     .eq("user_id", user.id)
     .order("created_at", { ascending: false })
@@ -267,7 +281,7 @@ export async function getMyContributions(): Promise<MyContributionListItem[]> {
   const { data } = await supabase
     .from("contributions")
     .select(
-      "id, subject_code, type, body, created_at, subjects(name, slug), careers:career_id(name)"
+      "id, subject_code, type, body, created_at, is_anonymous, subjects(name, slug), careers:career_id(name)"
     )
     .eq("user_id", user.id)
     .order("created_at", { ascending: false })

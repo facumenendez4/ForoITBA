@@ -15,6 +15,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Loader2, Plus, X } from "lucide-react"
+import { AnonymityToggle } from "@/components/anonymity-toggle"
 
 type CareerOption = { id: string; name: string }
 
@@ -24,6 +25,7 @@ type Props = {
   slug: string
   careers: CareerOption[]
   defaultCareerId: string
+  viewerDisplayName: string | null
 }
 
 const COPY = {
@@ -47,9 +49,11 @@ export function ContributionForm({
   slug,
   careers,
   defaultCareerId,
+  viewerDisplayName,
 }: Props) {
   const [open, setOpen] = useState(false)
   const [careerId, setCareerId] = useState(defaultCareerId)
+  const [isAnonymous, setIsAnonymous] = useState(true)
   const [state, formAction, pending] = useActionState(
     submitContribution,
     initialState
@@ -99,6 +103,11 @@ export function ContributionForm({
           <input type="hidden" name="slug" value={slug} />
           <input type="hidden" name="type" value={type} />
           <input type="hidden" name="career_id" value={careerId} />
+          <input
+            type="hidden"
+            name="is_anonymous"
+            value={isAnonymous ? "true" : "false"}
+          />
 
           {careers.length > 1 && (
             <div className="space-y-1.5">
@@ -130,6 +139,12 @@ export function ContributionForm({
               required
             />
           </div>
+
+          <AnonymityToggle
+            isAnonymous={isAnonymous}
+            onChange={setIsAnonymous}
+            displayName={viewerDisplayName}
+          />
 
           {state.error && (
             <p className="text-sm text-destructive">{state.error}</p>

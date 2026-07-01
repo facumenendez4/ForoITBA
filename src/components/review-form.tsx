@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
 import { Loader2, PenLine, X } from "lucide-react"
+import { AnonymityToggle } from "@/components/anonymity-toggle"
 
 type CareerOption = { id: string; name: string; credits: number }
 
@@ -27,6 +28,7 @@ export type MyReview = {
   usefulness: number
   comment: string | null
   term_taken: string | null
+  is_anonymous: boolean
 }
 
 type Props = {
@@ -35,6 +37,7 @@ type Props = {
   careers: CareerOption[]
   defaultCareerId: string
   existing: MyReview | null
+  viewerDisplayName: string | null
 }
 
 const DIFFICULTY = [
@@ -57,6 +60,7 @@ export function ReviewForm({
   careers,
   defaultCareerId,
   existing,
+  viewerDisplayName,
 }: Props) {
   const [open, setOpen] = useState(false)
   const [state, formAction, pending] = useActionState(submitReview, initialState)
@@ -72,6 +76,7 @@ export function ReviewForm({
   const [usefulness, setUsefulness] = useState<number | null>(
     existing?.usefulness ?? null
   )
+  const [isAnonymous, setIsAnonymous] = useState(existing?.is_anonymous ?? true)
 
   // Cerrar el form cuando el guardado fue exitoso (la página ya se revalidó).
   useEffect(() => {
@@ -119,6 +124,11 @@ export function ReviewForm({
           <input type="hidden" name="difficulty" value={difficulty ?? ""} />
           <input type="hidden" name="workload" value={workload ?? ""} />
           <input type="hidden" name="usefulness" value={usefulness ?? ""} />
+          <input
+            type="hidden"
+            name="is_anonymous"
+            value={isAnonymous ? "true" : "false"}
+          />
 
           {careers.length > 1 && (
             <div className="space-y-1.5">
@@ -236,6 +246,12 @@ export function ReviewForm({
               maxLength={2000}
             />
           </div>
+
+          <AnonymityToggle
+            isAnonymous={isAnonymous}
+            onChange={setIsAnonymous}
+            displayName={viewerDisplayName}
+          />
 
           {state.error && (
             <p className="text-sm text-destructive">{state.error}</p>

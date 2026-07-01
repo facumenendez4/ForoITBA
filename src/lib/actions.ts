@@ -13,10 +13,32 @@ const VALID_WORKLOAD = [1, 3, 6, 9]
 const VALID_USEFULNESS = [1, 2, 3, 4, 5]
 const MAX_COMMENT = 2000
 const MAX_BODY = 4000
+const MAX_DISPLAY_NAME = 60
 
 function str(formData: FormData, key: string): string {
   const v = formData.get(key)
   return typeof v === "string" ? v.trim() : ""
+}
+
+/**
+ * Si el usuario elige publicar sin anonimato, necesita tener cargado un
+ * nombre para mostrar en su perfil (se opta activamente por mostrarse).
+ */
+async function checkDisplayNameForNonAnonymous(
+  supabase: Awaited<ReturnType<typeof createClient>>,
+  userId: string,
+  isAnonymous: boolean
+): Promise<string | null> {
+  if (isAnonymous) return null
+  const { data } = await supabase
+    .from("profiles")
+    .select("display_name")
+    .eq("id", userId)
+    .single()
+  if (!data?.display_name) {
+    return "Configurá un nombre para mostrar en tu perfil antes de publicar sin anonimato."
+  }
+  return null
 }
 
 /**
@@ -41,6 +63,7 @@ export async function submitReview(
   const usefulness = Number(formData.get("usefulness"))
   const comment = str(formData, "comment") || null
   const termTaken = str(formData, "term_taken") || null
+  const isAnonymous = str(formData, "is_anonymous") !== "false"
 
   if (!subjectCode || !careerId) return { ok: false, error: "Faltan datos." }
   if (!careerId.match(/^[0-9a-f-]{36}$/i))
@@ -53,6 +76,13 @@ export async function submitReview(
     return { ok: false, error: "Elegí la utilidad." }
   if (comment && comment.length > MAX_COMMENT)
     return { ok: false, error: `El comentario supera ${MAX_COMMENT} caracteres.` }
+
+  const displayNameError = await checkDisplayNameForNonAnonymous(
+    supabase,
+    user.id,
+    isAnonymous
+  )
+  if (displayNameError) return { ok: false, error: displayNameError }
 
   // La carrera tiene que dictar realmente esta materia (anti metric-poisoning).
   const { data: pairing } = await supabase
@@ -74,6 +104,7 @@ export async function submitReview(
       usefulness,
       comment,
       term_taken: termTaken,
+      is_anonymous: isAnonymous,
       updated_at: new Date().toISOString(),
     },
     { onConflict: "user_id,subject_code" }
@@ -103,6 +134,7 @@ export async function submitContribution(
   const careerId = str(formData, "career_id")
   const type = str(formData, "type")
   const body = str(formData, "body")
+  const isAnonymous = str(formData, "is_anonymous") !== "false"
 
   if (!subjectCode || !careerId) return { ok: false, error: "Faltan datos." }
   if (type !== "material" && type !== "consejo")
@@ -110,6 +142,13 @@ export async function submitContribution(
   if (body.length < 3) return { ok: false, error: "El aporte es muy corto." }
   if (body.length > MAX_BODY)
     return { ok: false, error: `El aporte supera ${MAX_BODY} caracteres.` }
+
+  const displayNameError = await checkDisplayNameForNonAnonymous(
+    supabase,
+    user.id,
+    isAnonymous
+  )
+  if (displayNameError) return { ok: false, error: displayNameError }
 
   // La carrera tiene que dictar realmente esta materia (anti metric-poisoning).
   const { data: pairing } = await supabase
@@ -127,6 +166,7 @@ export async function submitContribution(
     career_id: careerId,
     type,
     body,
+    is_anonymous: isAnonymous,
   })
 
   if (error) return { ok: false, error: error.message }
@@ -141,6 +181,7 @@ export async function submitContribution(
 export async function updateContribution(
   contributionId: string,
   body: string,
+  isAnonymous: boolean,
   slug: string
 ): Promise<ActionState> {
   const supabase = await createClient()
@@ -156,9 +197,16 @@ export async function updateContribution(
   if (trimmed.length > MAX_BODY)
     return { ok: false, error: `El aporte supera ${MAX_BODY} caracteres.` }
 
+  const displayNameError = await checkDisplayNameForNonAnonymous(
+    supabase,
+    user.id,
+    isAnonymous
+  )
+  if (displayNameError) return { ok: false, error: displayNameError }
+
   const { error } = await supabase
     .from("contributions")
-    .update({ body: trimmed })
+    .update({ body: trimmed, is_anonymous: isAnonymous })
     .eq("id", contributionId)
     .eq("user_id", user.id)
 
@@ -245,6 +293,34 @@ export async function updateProfileCareer(
   const { error } = await supabase
     .from("profiles")
     .update({ career_id: careerId })
+    .eq("id", user.id)
+
+  if (error) return { ok: false, error: error.message }
+
+  revalidatePath("/perfil")
+  return { ok: true }
+}
+
+/**
+ * Actualizar el nombre para mostrar del perfil (usado al publicar sin
+ * anonimato). Vacío = lo borra.
+ */
+export async function updateProfileDisplayName(
+  displayName: string
+): Promise<ActionState> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return { ok: false, error: "Iniciá sesión." }
+
+  const trimmed = displayName.trim()
+  if (trimmed.length > MAX_DISPLAY_NAME)
+    return { ok: false, error: `El nombre supera ${MAX_DISPLAY_NAME} caracteres.` }
+
+  const { error } = await supabase
+    .from("profiles")
+    .update({ display_name: trimmed || null })
     .eq("id", user.id)
 
   if (error) return { ok: false, error: error.message }
