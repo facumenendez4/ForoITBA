@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils"
 import { ReviewForm } from "@/components/review-form"
 import { ContributionForm } from "@/components/contribution-form"
 import { VoteButtons } from "@/components/vote-buttons"
+import { ReportButton } from "@/components/report-button"
 import type {
   Subject,
   PublicReview,
@@ -357,7 +358,13 @@ export function SubjectContent({
             <EmptyState text="Todavía no hay reseñas. ¡Sé el primero en dejar una!" />
           ) : (
             reviews.map((r) => (
-              <ReviewCard key={r.id} review={r} careers={careers} />
+              <ReviewCard
+                key={r.id}
+                review={r}
+                careers={careers}
+                slug={slug}
+                isAuthed={isAuthed}
+              />
             ))
           )}
         </TabsContent>
@@ -492,9 +499,13 @@ function DistributionBar({
 function ReviewCard({
   review,
   careers,
+  slug,
+  isAuthed,
 }: {
   review: PublicReview
   careers: CareerInfo[]
+  slug: string
+  isAuthed: boolean
 }) {
   const career = careers.find((c) => c.id === review.career_id)
 
@@ -534,6 +545,14 @@ function ReviewCard({
               day: "numeric",
             })}
           </span>
+          <span className="ml-auto">
+            <ReportButton
+              targetType="review"
+              targetId={review.id}
+              slug={slug}
+              isAuthed={isAuthed}
+            />
+          </span>
         </div>
       </CardContent>
     </Card>
@@ -568,13 +587,21 @@ function ContributionCard({
             <p className="text-sm leading-relaxed whitespace-pre-wrap">
               {contribution.body}
             </p>
-            <p className="text-xs text-muted-foreground mt-2">
-              {new Date(contribution.created_at).toLocaleDateString("es-AR", {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
-              })}
-            </p>
+            <div className="flex items-center gap-3 mt-2 text-xs text-muted-foreground">
+              <span>
+                {new Date(contribution.created_at).toLocaleDateString("es-AR", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </span>
+              <ReportButton
+                targetType="contribution"
+                targetId={contribution.id}
+                slug={slug}
+                isAuthed={isAuthed}
+              />
+            </div>
           </div>
           <VoteButtons
             contributionId={contribution.id}

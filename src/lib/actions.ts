@@ -5,6 +5,9 @@ import { createClient } from "@/lib/supabase/server"
 
 export type ActionState = { ok: boolean; error?: string }
 
+const UUID_RE = /^[0-9a-f-]{36}$/i
+const MAX_REASON = 500
+
 const VALID_DIFFICULTY = [1, 2, 3, 4, 5]
 const VALID_WORKLOAD = [1, 3, 6, 9]
 const VALID_USEFULNESS = [1, 2, 3, 4, 5]
@@ -177,5 +180,88 @@ export async function voteContribution(
   if (error) return { ok: false, error: error.message }
 
   if (slug) revalidatePath(`/materias/${slug}`)
+  return { ok: true }
+}
+
+/**
+ * Reportar una reseña o un aporte. Inserta en `reports` y avisa al admin por mail
+ * (best-effort: si el mail falla, el reporte igual queda registrado).
+ */
+export async function submitReport(
+  targetType: "review" | "contribution",
+  targetId: string,
+  reason: string,
+  slug: string
+): Promise<ActionState> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return { ok: false, error: "Iniciá sesión para reportar." }
+
+  if (targetType !== "review" && targetType !== "contribution")
+    return { ok: false, error: "Tipo de reporte inválido." }
+  if (!UUID_RE.test(targetId))
+    return { ok: false, error: "Referencia inválida." }
+
+  const trimmedReason = reason.trim().slice(0, MAX_REASON) || null
+
+  const { error } = await supabase.from("reports").insert({
+    reporter_id: user.id,
+    target_type: targetType,
+    target_id: targetId,
+    reason: trimmedReason,
+  })
+  if (error) return { ok: false, error: error.message }
+
+  // Datos del contenido reportado para el mail (best-effort, vía vistas públicas).
+  let subjectCode: string | null = null
+  let content: string | null = null
+  if (targetType === "review") {
+    const { data } = await supabase
+      .from("public_reviews")
+      .select("subject_code, comment")
+      .eq("id", targetId)
+      .maybeSingle()
+    subjectCode = data?.subject_code ?? null
+    content = data?.comment ?? null
+  } else {
+    const { data } = await supabase
+      .from("public_contributions")
+      .select("subject_code, body")
+      .eq("id", targetId)
+      .maybeSingle()
+    subjectCode = data?.subject_code ?? null
+    content = data?.body ?? null
+  }
+
+  let subjectName: string | null = null
+  if (subjectCode) {
+    const { data } = await supabase
+      .from("subjects")
+      .select("name")
+      .eq("code", subjectCode)
+      .maybeSingle()
+    subjectName = data?.name ?? null
+  }
+
+  // Notificación al admin vía Edge Function + Resend (best-effort: si falla, el
+  // reporte igual queda registrado y no bloqueamos al usuario).
+  try {
+    await supabase.functions.invoke("report-notification", {
+      body: {
+        targetType,
+        targetId,
+        reason: trimmedReason,
+        subjectCode,
+        subjectName,
+        content,
+        path: slug ? `/materias/${slug}` : null,
+      },
+    })
+  } catch {
+    // ignorar: la notificación es best-effort
+  }
+
   return { ok: true }
 }
