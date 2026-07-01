@@ -14,19 +14,24 @@ export async function GET(request: Request) {
     const { error } = await supabase.auth.exchangeCodeForSession(code)
 
     if (!error) {
-      const {
-        data: { user },
-      } = await supabase.auth.getUser()
+      // El redirect a onboarding solo aplica al login/registro normal (next="/").
+      // Para destinos explícitos (p. ej. recuperación → /reset-password) respetamos
+      // el next y no forzamos el onboarding.
+      if (next === "/") {
+        const {
+          data: { user },
+        } = await supabase.auth.getUser()
 
-      if (user) {
-        const { data: profile } = await supabase
-          .from("profiles")
-          .select("career_id")
-          .eq("id", user.id)
-          .single()
+        if (user) {
+          const { data: profile } = await supabase
+            .from("profiles")
+            .select("career_id")
+            .eq("id", user.id)
+            .single()
 
-        if (!profile?.career_id) {
-          return NextResponse.redirect(`${origin}/onboarding`)
+          if (!profile?.career_id) {
+            return NextResponse.redirect(`${origin}/onboarding`)
+          }
         }
       }
 

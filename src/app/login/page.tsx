@@ -16,7 +16,7 @@ import {
 import { ArrowLeft, Loader2 } from "lucide-react"
 import Link from "next/link"
 
-type Mode = "login" | "register"
+type Mode = "login" | "register" | "forgot"
 
 export default function LoginPage() {
   const router = useRouter()
@@ -26,14 +26,36 @@ export default function LoginPage() {
   const [confirmPassword, setConfirmPassword] = useState("")
   const [loading, setLoading] = useState(false)
   const [errorMsg, setErrorMsg] = useState("")
+  const [infoMsg, setInfoMsg] = useState("")
+
+  function switchMode(next: Mode) {
+    setMode(next)
+    setErrorMsg("")
+    setInfoMsg("")
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setErrorMsg("")
+    setInfoMsg("")
 
     const trimmed = email.trim().toLowerCase()
     if (!trimmed.endsWith("@itba.edu.ar")) {
       setErrorMsg("Solo se permiten emails @itba.edu.ar")
+      return
+    }
+
+    if (mode === "forgot") {
+      setLoading(true)
+      const supabase = createClient()
+      await supabase.auth.resetPasswordForEmail(trimmed, {
+        redirectTo: `${window.location.origin}/auth/callback?next=/reset-password`,
+      })
+      // Mensaje neutro: no revelamos si el email existe (anti-enumeración).
+      setInfoMsg(
+        "Si el email está registrado, te enviamos un enlace para recuperar tu contraseña. Revisá tu casilla."
+      )
+      setLoading(false)
       return
     }
 
@@ -116,7 +138,9 @@ export default function LoginPage() {
             <CardDescription>
               {mode === "login"
                 ? "Ingresá con tu cuenta"
-                : "Creá tu cuenta con email del ITBA"}
+                : mode === "register"
+                ? "Creá tu cuenta con email del ITBA"
+                : "Te enviamos un enlace para recuperar tu contraseña"}
             </CardDescription>
           </CardHeader>
 
@@ -136,18 +160,31 @@ export default function LoginPage() {
                 />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="password">Contraseña</Label>
-                <Input
-                  id="password"
-                  type="password"
-                  placeholder="••••••••"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                  disabled={loading}
-                />
-              </div>
+              {mode !== "forgot" && (
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <Label htmlFor="password">Contraseña</Label>
+                    {mode === "login" && (
+                      <button
+                        type="button"
+                        className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                        onClick={() => switchMode("forgot")}
+                      >
+                        ¿Olvidaste tu contraseña?
+                      </button>
+                    )}
+                  </div>
+                  <Input
+                    id="password"
+                    type="password"
+                    placeholder="••••••••"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                    disabled={loading}
+                  />
+                </div>
+              )}
 
               {mode === "register" && (
                 <div className="space-y-2">
@@ -170,6 +207,10 @@ export default function LoginPage() {
                 <p className="text-sm text-destructive">{errorMsg}</p>
               )}
 
+              {infoMsg && (
+                <p className="text-sm text-muted-foreground">{infoMsg}</p>
+              )}
+
               <Button
                 type="submit"
                 className="w-full"
@@ -178,12 +219,18 @@ export default function LoginPage() {
                 {loading ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    {mode === "login" ? "Ingresando..." : "Creando cuenta..."}
+                    {mode === "login"
+                      ? "Ingresando..."
+                      : mode === "register"
+                      ? "Creando cuenta..."
+                      : "Enviando..."}
                   </>
                 ) : mode === "login" ? (
                   "Ingresar"
-                ) : (
+                ) : mode === "register" ? (
                   "Crear cuenta"
+                ) : (
+                  "Enviar enlace"
                 )}
               </Button>
 
@@ -194,26 +241,31 @@ export default function LoginPage() {
                     <button
                       type="button"
                       className="text-primary hover:underline font-medium"
-                      onClick={() => {
-                        setMode("register")
-                        setErrorMsg("")
-                      }}
+                      onClick={() => switchMode("register")}
                     >
                       Registrate
                     </button>
                   </>
-                ) : (
+                ) : mode === "register" ? (
                   <>
                     ¿Ya tenés cuenta?{" "}
                     <button
                       type="button"
                       className="text-primary hover:underline font-medium"
-                      onClick={() => {
-                        setMode("login")
-                        setErrorMsg("")
-                      }}
+                      onClick={() => switchMode("login")}
                     >
                       Ingresá
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    ¿Te acordaste?{" "}
+                    <button
+                      type="button"
+                      className="text-primary hover:underline font-medium"
+                      onClick={() => switchMode("login")}
+                    >
+                      Volver a ingresar
                     </button>
                   </>
                 )}
