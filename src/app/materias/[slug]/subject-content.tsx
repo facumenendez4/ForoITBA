@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react"
 import Link from "next/link"
+import { AnimatePresence, motion } from "framer-motion"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -20,6 +21,11 @@ import type {
   Viewer,
   MyReview,
 } from "@/lib/queries"
+import {
+  DIFFICULTY_LABELS,
+  DIFFICULTY_COLORS,
+  DIFFICULTY_TEXT_COLORS,
+} from "@/lib/constants"
 
 type CareerInfo = {
   id: string
@@ -70,30 +76,6 @@ function mode(nums: number[]): number | null {
     }
   }
   return best
-}
-
-const DIFFICULTY_LABELS: Record<number, string> = {
-  1: "Baja",
-  2: "Media-baja",
-  3: "Media",
-  4: "Media-alta",
-  5: "Alta",
-}
-
-const DIFFICULTY_COLORS: Record<number, string> = {
-  1: "bg-rating-1",
-  2: "bg-rating-2",
-  3: "bg-rating-3",
-  4: "bg-rating-4",
-  5: "bg-rating-5",
-}
-
-const DIFFICULTY_TEXT_COLORS: Record<number, string> = {
-  1: "text-rating-1",
-  2: "text-rating-2",
-  3: "text-rating-3",
-  4: "text-rating-4",
-  5: "text-rating-5",
 }
 
 export function SubjectContent({
@@ -379,16 +361,26 @@ export function SubjectContent({
           {reviews.length === 0 ? (
             <EmptyState text="Todavía no hay reseñas. ¡Sé el primero en dejar una!" />
           ) : (
-            sortedReviews.map((r) => (
-              <ReviewCard
-                key={r.id}
-                review={r}
-                careers={careers}
-                slug={slug}
-                myVote={myVotes[r.id] ?? 0}
-                isAuthed={isAuthed}
-              />
-            ))
+            <AnimatePresence initial={false}>
+              {sortedReviews.map((r) => (
+                <motion.div
+                  key={r.id}
+                  layout
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <ReviewCard
+                    review={r}
+                    careers={careers}
+                    slug={slug}
+                    myVote={myVotes[r.id] ?? 0}
+                    isAuthed={isAuthed}
+                  />
+                </motion.div>
+              ))}
+            </AnimatePresence>
           )}
         </TabsContent>
 
@@ -411,16 +403,26 @@ export function SubjectContent({
           {materials.length === 0 ? (
             <EmptyState text="Sin material compartido aún." />
           ) : (
-            sortedMaterials.map((c) => (
-              <ContributionCard
-                key={c.id}
-                contribution={c}
-                careers={careers}
-                slug={slug}
-                myVote={myVotes[c.id] ?? 0}
-                isAuthed={isAuthed}
-              />
-            ))
+            <AnimatePresence initial={false}>
+              {sortedMaterials.map((c) => (
+                <motion.div
+                  key={c.id}
+                  layout
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <ContributionCard
+                    contribution={c}
+                    careers={careers}
+                    slug={slug}
+                    myVote={myVotes[c.id] ?? 0}
+                    isAuthed={isAuthed}
+                  />
+                </motion.div>
+              ))}
+            </AnimatePresence>
           )}
         </TabsContent>
 
@@ -443,16 +445,26 @@ export function SubjectContent({
           {tips.length === 0 ? (
             <EmptyState text="Sin consejos aún." />
           ) : (
-            sortedTips.map((c) => (
-              <ContributionCard
-                key={c.id}
-                contribution={c}
-                careers={careers}
-                slug={slug}
-                myVote={myVotes[c.id] ?? 0}
-                isAuthed={isAuthed}
-              />
-            ))
+            <AnimatePresence initial={false}>
+              {sortedTips.map((c) => (
+                <motion.div
+                  key={c.id}
+                  layout
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <ContributionCard
+                    contribution={c}
+                    careers={careers}
+                    slug={slug}
+                    myVote={myVotes[c.id] ?? 0}
+                    isAuthed={isAuthed}
+                  />
+                </motion.div>
+              ))}
+            </AnimatePresence>
           )}
         </TabsContent>
       </Tabs>

@@ -136,6 +136,124 @@ export async function submitContribution(
 }
 
 /**
+ * Actualizar el cuerpo de un aporte propio.
+ */
+export async function updateContribution(
+  contributionId: string,
+  body: string,
+  slug: string
+): Promise<ActionState> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return { ok: false, error: "Iniciá sesión." }
+
+  if (!UUID_RE.test(contributionId))
+    return { ok: false, error: "Referencia inválida." }
+  const trimmed = body.trim()
+  if (trimmed.length < 3) return { ok: false, error: "El aporte es muy corto." }
+  if (trimmed.length > MAX_BODY)
+    return { ok: false, error: `El aporte supera ${MAX_BODY} caracteres.` }
+
+  const { error } = await supabase
+    .from("contributions")
+    .update({ body: trimmed })
+    .eq("id", contributionId)
+    .eq("user_id", user.id)
+
+  if (error) return { ok: false, error: error.message }
+
+  revalidatePath("/perfil")
+  if (slug) revalidatePath(`/materias/${slug}`)
+  return { ok: true }
+}
+
+/**
+ * Borrar una reseña propia.
+ */
+export async function deleteReview(
+  reviewId: string,
+  slug: string
+): Promise<ActionState> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return { ok: false, error: "Iniciá sesión." }
+
+  if (!UUID_RE.test(reviewId))
+    return { ok: false, error: "Referencia inválida." }
+
+  const { error } = await supabase
+    .from("reviews")
+    .delete()
+    .eq("id", reviewId)
+    .eq("user_id", user.id)
+
+  if (error) return { ok: false, error: error.message }
+
+  revalidatePath("/perfil")
+  if (slug) revalidatePath(`/materias/${slug}`)
+  return { ok: true }
+}
+
+/**
+ * Borrar un aporte propio.
+ */
+export async function deleteContribution(
+  contributionId: string,
+  slug: string
+): Promise<ActionState> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return { ok: false, error: "Iniciá sesión." }
+
+  if (!UUID_RE.test(contributionId))
+    return { ok: false, error: "Referencia inválida." }
+
+  const { error } = await supabase
+    .from("contributions")
+    .delete()
+    .eq("id", contributionId)
+    .eq("user_id", user.id)
+
+  if (error) return { ok: false, error: error.message }
+
+  revalidatePath("/perfil")
+  if (slug) revalidatePath(`/materias/${slug}`)
+  return { ok: true }
+}
+
+/**
+ * Actualizar la carrera del perfil del usuario.
+ */
+export async function updateProfileCareer(
+  careerId: string
+): Promise<ActionState> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return { ok: false, error: "Iniciá sesión." }
+
+  if (!careerId.match(/^[0-9a-f-]{36}$/i))
+    return { ok: false, error: "Carrera inválida." }
+
+  const { error } = await supabase
+    .from("profiles")
+    .update({ career_id: careerId })
+    .eq("id", user.id)
+
+  if (error) return { ok: false, error: error.message }
+
+  revalidatePath("/perfil")
+  return { ok: true }
+}
+
+/**
  * Votar un aporte. value: 1 (útil) o -1 (no útil).
  * unique(user_id, contribution_id): votar igual al voto actual lo quita (toggle);
  * votar distinto lo cambia.

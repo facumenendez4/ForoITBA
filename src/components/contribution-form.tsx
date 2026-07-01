@@ -1,6 +1,7 @@
 "use client"
 
 import { useActionState, useEffect, useState } from "react"
+import { motion } from "framer-motion"
 import { submitContribution, type ActionState } from "@/lib/actions"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
@@ -74,6 +75,11 @@ export function ContributionForm({
   }
 
   return (
+    <motion.div
+      initial={{ opacity: 0, y: -6 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.18 }}
+    >
     <Card className="border-primary/30">
       <CardContent className="py-5">
         <div className="flex items-center justify-between mb-4">
@@ -141,5 +147,6 @@ export function ContributionForm({
         </form>
       </CardContent>
     </Card>
+    </motion.div>
   )
 }

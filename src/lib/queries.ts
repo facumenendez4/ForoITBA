@@ -214,6 +214,67 @@ export async function getMyVotes(
   return map
 }
 
+export type MyReviewListItem = {
+  id: string
+  subject_code: string
+  difficulty: number
+  workload: number
+  usefulness: number
+  comment: string | null
+  term_taken: string | null
+  created_at: string
+  subjects: { name: string; slug: string }
+  careers: { name: string }
+}
+
+export type MyContributionListItem = {
+  id: string
+  subject_code: string
+  type: "material" | "consejo"
+  body: string
+  created_at: string
+  subjects: { name: string; slug: string }
+  careers: { name: string }
+}
+
+/** Las reseñas propias del usuario logueado, con materia y carrera resueltas. */
+export async function getMyReviews(): Promise<MyReviewListItem[]> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return []
+
+  const { data } = await supabase
+    .from("reviews")
+    .select(
+      "id, subject_code, difficulty, workload, usefulness, comment, term_taken, created_at, subjects(name, slug), careers:career_id(name)"
+    )
+    .eq("user_id", user.id)
+    .order("created_at", { ascending: false })
+
+  return (data ?? []) as unknown as MyReviewListItem[]
+}
+
+/** Los aportes propios del usuario logueado, con materia y carrera resueltos. */
+export async function getMyContributions(): Promise<MyContributionListItem[]> {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+  if (!user) return []
+
+  const { data } = await supabase
+    .from("contributions")
+    .select(
+      "id, subject_code, type, body, created_at, subjects(name, slug), careers:career_id(name)"
+    )
+    .eq("user_id", user.id)
+    .order("created_at", { ascending: false })
+
+  return (data ?? []) as unknown as MyContributionListItem[]
+}
+
 export async function getCareerSubjectCounts(careerId: string): Promise<{ total: number; electives: number }> {
   const supabase = await createClient()
   const { count: total } = await supabase
